@@ -1,12 +1,12 @@
 package org.academiadecodigo.bootcamp;
 
-import javax.swing.*;
-
 public class Main {
 
     public static void main(String[] args) {
-        BootStrap bootStrap = new BootStrap();
-        bootStrap.start();
+
+        Game game = new Game("My game", 775,445);
+
+        game.start();
     }
 
 }
