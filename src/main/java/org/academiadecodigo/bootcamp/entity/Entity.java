@@ -1,5 +1,7 @@
 package org.academiadecodigo.bootcamp.entity;
 
+import org.academiadecodigo.bootcamp.Handler;
+
 import java.awt.*;
 
 public abstract class Entity {
@@ -8,12 +10,14 @@ public abstract class Entity {
     protected float y;
     protected int width;
     protected int height;
+    protected Handler handler;
 
-    public Entity(float x, float y, int width, int height) {
+    public Entity(float x, float y, int width, int height, Handler handler) {
         this.x = x;
         this.y = y;
         this.width = width;
         this.height = height;
+        this.handler = handler;
     }
 
     public abstract void update();

@@ -1,20 +1,20 @@
 package org.academiadecodigo.bootcamp.entity.creatures;
 
-import org.academiadecodigo.bootcamp.Game;
+import org.academiadecodigo.bootcamp.Handler;
 import org.academiadecodigo.bootcamp.gfx.Assets;
 
 import java.awt.*;
 
 public class Player extends Creature {
 
-    public Player(Game game, float x, float y) {
-        super(game, x, y, DEFAULT_CREATURE_WIDTH, DEFAULT_CREATURE_HEIGHT);
+    public Player(float x, float y, Handler handler) {
+        super(x, y, DEFAULT_CREATURE_WIDTH, DEFAULT_CREATURE_HEIGHT, handler);
     }
 
     public void update() {
         getInput();
         move();
-        game.getGameCamera().centerOnEntity(this);
+        handler.getGameCamera().centerOnEntity(this);
     }
 
 
@@ -22,22 +22,22 @@ public class Player extends Creature {
         xMove = 0;
         yMove = 0;
 
-        if (super.game.getKeyManager().isUp()){
+        if (handler.getKeyManager().isUp()){
             yMove = -speed;
         }
-        if (super.game.getKeyManager().isDown()){
+        if (handler.getKeyManager().isDown()){
             yMove = speed;
         }
-        if (super.game.getKeyManager().isLeft()){
+        if (handler.getKeyManager().isLeft()){
             xMove = -speed;
         }
-        if (super.game.getKeyManager().isRight()){
+        if (handler.getKeyManager().isRight()){
             xMove = speed;
         }
     }
 
 
     public void render(Graphics graphics) {
-        graphics.drawImage(Assets.playerLeft1,(int) (x -game.getGameCamera().getxOffset()), (int) (y - game.getGameCamera().getyOffset()),width,height,null);
+        graphics.drawImage(Assets.playerLeft1,(int) (x -handler.getGameCamera().getxOffset()), (int) (y - handler.getGameCamera().getyOffset()),width,height,null);
     }
 }

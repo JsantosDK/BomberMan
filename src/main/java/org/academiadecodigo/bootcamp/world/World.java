@@ -1,6 +1,7 @@
 package org.academiadecodigo.bootcamp.world;
 
 import org.academiadecodigo.bootcamp.Game;
+import org.academiadecodigo.bootcamp.Handler;
 import org.academiadecodigo.bootcamp.tile.Tile;
 import org.academiadecodigo.bootcamp.utils.Utils;
 
@@ -8,15 +9,15 @@ import java.awt.*;
 
 public class World {
 
-    private Game game;
+    private Handler handler;
     private int width;
     private int height;
     private int spawnX;
     private int spawnY;
     private int[][] tiles;
 
-    public World(Game game, String path) {
-        this.game = game;
+    public World(Handler handler, String path) {
+        this.handler = handler;
         loadWorld(path);
     }
 
@@ -25,14 +26,14 @@ public class World {
     }
 
     public void render(Graphics graphics){
-        int xStart = (int) Math.max(0, game.getGameCamera().getxOffset() / Tile.tileWidth);
-        int xEnd = (int) Math.min(width, (game.getGameCamera().getxOffset() + game.getWidth())/ Tile.tileWidth + 1);
-        int yStart = (int)  Math.max(0, game.getGameCamera().getyOffset() / Tile.tileHeight);
-        int yEnd = (int) Math.min(height, (game.getGameCamera().getxOffset() + game.getWidth())/ Tile.tileHeight + 1);
+        int xStart = (int) Math.max(0, handler.getGame().getGameCamera().getxOffset() / Tile.tileWidth);
+        int xEnd = (int) Math.min(width, (handler.getGame().getGameCamera().getxOffset() + handler.getGame().getWidth())/ Tile.tileWidth + 1);
+        int yStart = (int)  Math.max(0, handler.getGame().getGameCamera().getyOffset() / Tile.tileHeight);
+        int yEnd = (int) Math.min(height, (handler.getGame().getGameCamera().getxOffset() + handler.getGame().getWidth())/ Tile.tileHeight + 1);
 
         for (int j = yStart; j < yEnd; j++){
             for (int i = xStart; i < xEnd; i++){
-                getTile(i,j).render(graphics,(int )(i * Tile.tileWidth - game.getGameCamera().getxOffset()),(int) (j * Tile.tileHeight - game.getGameCamera().getyOffset()));
+                getTile(i,j).render(graphics,(int )(i * Tile.tileWidth - handler.getGame().getGameCamera().getxOffset()),(int) (j * Tile.tileHeight - handler.getGame().getGameCamera().getyOffset()));
             }
         }
 

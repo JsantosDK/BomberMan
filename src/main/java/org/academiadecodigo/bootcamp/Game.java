@@ -26,6 +26,7 @@ public class Game implements Runnable{
     private State menuState;
     private KeyManager keyManager;
     private GameCamera gameCamera;
+    private Handler handler;
 
     public Game(String title, int width, int heigth) {
         this.title = title;
@@ -41,9 +42,10 @@ public class Game implements Runnable{
         Assets.init();
 
         gameCamera = new GameCamera(this,0,0);
+        handler = new Handler(this);
 
-        gameState = new GameState(this);
-        menuState = new MenuState(this);
+        gameState = new GameState(handler);
+        menuState = new MenuState(handler);
         GameStateManager.setCurrentState(gameState);
     }
 
@@ -126,8 +128,7 @@ public class Game implements Runnable{
             }
         }
 
-
-
-
     }
+
+
 }

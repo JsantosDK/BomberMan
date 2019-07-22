@@ -1,15 +1,15 @@
 package org.academiadecodigo.bootcamp.state;
 
-import org.academiadecodigo.bootcamp.Game;
+import org.academiadecodigo.bootcamp.Handler;
 
 import java.awt.*;
 
 public abstract class State {
 
-    protected Game game;
+    protected Handler handler;
 
-    public State(Game game) {
-        this.game = game;
+    public State(Handler handler) {
+        this.handler = handler;
     }
 
     public abstract void update();

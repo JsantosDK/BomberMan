@@ -1,5 +1,6 @@
 package org.academiadecodigo.bootcamp.state;
 
+import org.academiadecodigo.bootcamp.Handler;
 import org.academiadecodigo.bootcamp.entity.creatures.Player;
 import org.academiadecodigo.bootcamp.Game;
 import org.academiadecodigo.bootcamp.tile.Tile;
@@ -12,20 +13,18 @@ public class GameState extends State {
     private Player player;
     private World world;
 
-    public GameState(Game game) {
-        super(game);
-        player = new Player(game,20,25);
-        world = new World(game,"resources/level01/world.txt");
+    public GameState(Handler handler) {
+        super(handler);
+        world = new World(handler,"resources/level01/world.txt");
+        handler.setWorld(world);
+        player = new Player(20,25, handler);
 
-        game.getGameCamera().move(100,100);
+        handler.getGame().getGameCamera().move(100,100);
     }
-
 
     public void update() {
         world.update();
         player.update();
-
-
     }
 
     public void render(Graphics graphics) {
