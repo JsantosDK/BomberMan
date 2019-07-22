@@ -1,5 +1,6 @@
 package org.academiadecodigo.bootcamp.world;
 
+import org.academiadecodigo.bootcamp.Game;
 import org.academiadecodigo.bootcamp.tile.Tile;
 import org.academiadecodigo.bootcamp.utils.Utils;
 
@@ -7,13 +8,15 @@ import java.awt.*;
 
 public class World {
 
+    private Game game;
     private int width;
     private int height;
     private int spawnX;
     private int spawnY;
     private int[][] tiles;
 
-    public World(String path) {
+    public World(Game game, String path) {
+        this.game = game;
         loadWorld(path);
     }
 
@@ -24,7 +27,7 @@ public class World {
     public void render(Graphics graphics){
         for (int j = 0; j<height; j++){
             for (int i = 0; i < width; i++){
-                getTile(i,j).render(graphics,i * Tile.tileWidth,j * Tile.tileHeight);
+                getTile(i,j).render(graphics,(int )(i * Tile.tileWidth - game.getGameCamera().getxOffset()),(int) (j * Tile.tileHeight - game.getGameCamera().getyOffset()));
             }
         }
 

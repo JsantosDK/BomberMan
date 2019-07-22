@@ -1,5 +1,6 @@
 package org.academiadecodigo.bootcamp.entity.creatures;
 
+import org.academiadecodigo.bootcamp.Game;
 import org.academiadecodigo.bootcamp.entity.Entity;
 
 public abstract class Creature extends Entity {
@@ -9,19 +10,20 @@ public abstract class Creature extends Entity {
     public static final int DEFAULT_CREATURE_WIDTH = 32;
     public static final int DEFAULT_CREATURE_HEIGHT = 32;
 
-
+    protected Game game;
     protected int health;
     protected float speed;
     protected float xMove;
     protected float yMove;
 
 
-    public Creature(float x, float y, int width, int heigth) {
+    public Creature(Game game, float x, float y, int width, int heigth) {
         super(x, y, width,heigth);
         health = DEFAULT_HEALTH;
         speed = DEFAULT_SPEED;
         xMove = 0;
         yMove = 0;
+        this.game = game;
     }
 
     public void move(){

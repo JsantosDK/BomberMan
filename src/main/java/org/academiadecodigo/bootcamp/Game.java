@@ -2,6 +2,7 @@ package org.academiadecodigo.bootcamp;
 
 import org.academiadecodigo.bootcamp.display.Display;
 import org.academiadecodigo.bootcamp.gfx.Assets;
+import org.academiadecodigo.bootcamp.gfx.GameCamera;
 import org.academiadecodigo.bootcamp.input.KeyManager;
 import org.academiadecodigo.bootcamp.state.GameState;
 import org.academiadecodigo.bootcamp.state.GameStateManager;
@@ -24,6 +25,7 @@ public class Game implements Runnable{
     private State gameState;
     private State menuState;
     private KeyManager keyManager;
+    private GameCamera gameCamera;
 
     public Game(String title, int width, int heigth) {
         this.title = title;
@@ -37,6 +39,8 @@ public class Game implements Runnable{
         display = new Display(title,width,heigth);
         display.getFrame().addKeyListener(keyManager);
         Assets.init();
+
+        gameCamera = new GameCamera(this,0,0);
 
         gameState = new GameState(this);
         menuState = new MenuState(this);
@@ -87,6 +91,18 @@ public class Game implements Runnable{
 
     public KeyManager getKeyManager() {
         return keyManager;
+    }
+
+    public GameCamera getGameCamera() {
+        return gameCamera;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeigth() {
+        return heigth;
     }
 
     public void run() {

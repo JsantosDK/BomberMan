@@ -15,7 +15,9 @@ public class GameState extends State {
     public GameState(Game game) {
         super(game);
         player = new Player(game,20,25);
-        world = new World("resources/level01/world.txt");
+        world = new World(game,"resources/level01/world.txt");
+
+        game.getGameCamera().move(100,100);
     }
 
 

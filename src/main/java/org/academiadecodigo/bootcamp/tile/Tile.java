@@ -28,6 +28,7 @@ public class Tile {
 
     public void render(Graphics graphics, int x, int y){
         graphics.drawImage(texture,x,y, tileWidth, tileHeight,null);
+
     }
 
     public int getiD() {
