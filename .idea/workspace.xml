@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0ee5f7d-f4e7-4092-9885-ed5cd36423fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ciffar/confi/WindowCanvas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ciffar/graphics/Assets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ciffar/graphics/SpriteSheet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ciffar/loaders/ImageLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ciffar/confi/Engine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/confi/Bootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/views/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/confi/WindowFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/confi/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/confi/Bootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/confi/WindowCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/confi/WindowCanvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/confi/WindowFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/confi/WindowFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/Game.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,71 +24,7 @@
     <favorites_list name="bomberman2d" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/confi/WindowCanvas.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-                  <folding>
-                    <element signature="e#163#164#0" expanded="true" />
-                    <element signature="e#193#194#0" expanded="true" />
-                    <element signature="e#613#614#0" expanded="true" />
-                    <element signature="e#642#643#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/confi/WindowFrame.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/confi/Bootstrap.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="22" selection-start-line="22" selection-end-line="22" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/Main.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-                  <folding>
-                    <element signature="e#81#82#0" expanded="true" />
-                    <element signature="e#119#120#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/Game.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="541">
-                  <caret line="62" column="25" lean-forward="true" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -106,7 +40,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/view/Display.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/service/DisplayService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/view/DisplayView.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/BootStrap.java" />
@@ -138,13 +71,11 @@
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/Handler.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/state/State.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/state/MenuState.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/world/World.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/entity/Entity.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/entity/creatures/Creature.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/entity/creatures/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/state/GameState.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/views/Display.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/Bootstrap.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/utils/Display.java" />
@@ -154,9 +85,12 @@
         <option value="$PROJECT_DIR$/src/main/java/ciffar/graphics/SpriteSheet.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/graphics/Assets.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/views/View.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/confi/WindowFrame.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/confi/Bootstrap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ciffar/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/confi/WindowCanvas.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ciffar/confi/Engine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ciffar/confi/Bootstrap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ciffar/confi/WindowFrame.java" />
       </list>
     </option>
   </component>
@@ -170,7 +104,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,13 +158,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ciffar" type="462c0819:PsiDirectoryNode" />
+              <item name="loaders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bomberman2d" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bomberman2d" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="bootcamp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -260,6 +203,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ciffar.Main" />
+      <module name="bomberman2d" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ciffar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.academiadecodigo.bootcamp.Main" />
       <module name="bomberman2d" />
@@ -309,11 +265,12 @@
       <workItem from="1563782811909" duration="1363000" />
       <workItem from="1563788351312" duration="87000" />
       <workItem from="1563789631173" duration="4614000" />
+      <workItem from="1563868981664" duration="2718000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6064000" />
+    <option name="totallyTimeSpent" value="8782000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -326,9 +283,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="978" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49541286" visible="true" weight="0.17571884" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49541286" visible="true" weight="0.1773163" />
       <window_info id="Structure" order="1" sideWeight="0.5045872" side_tool="true" weight="0.25334382" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -344,7 +300,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295711" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3295711" />
       <window_info anchor="bottom" id="Thumbnails" order="8" weight="0.32843137" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3295711" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32731378" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -565,10 +521,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/View.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/View.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#89#90#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -579,20 +539,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/confi/Bootstrap.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/confi/Engine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="346">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding>
+            <element signature="e#898#899#0" expanded="true" />
+            <element signature="e#946#947#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/confi/WindowFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#89#90#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/confi/Bootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
@@ -607,30 +575,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="62" column="25" lean-forward="true" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/confi/WindowCanvas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        <state relative-caret-position="415">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
           <folding>
-            <element signature="e#163#164#0" expanded="true" />
-            <element signature="e#193#194#0" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1201#1202#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/confi/WindowFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="431">
+          <caret line="67" column="7" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
         </state>
       </provider>
     </entry>

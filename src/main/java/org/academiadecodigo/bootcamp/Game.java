@@ -66,6 +66,8 @@ public class Game implements Runnable{
         graphics = bufferStrategy.getDrawGraphics();
 
         graphics.clearRect(0,0,width,heigth);
+        graphics.setColor(new Color(47,47,45));
+        graphics.fillRect(0,0,width,heigth);
 
         if (GameStateManager.getCurrentState() != null){
             GameStateManager.getCurrentState().render(graphics);
