@@ -1,15 +1,33 @@
 package ciffar.confi;
 
+import ciffar.controllers.WindowController;
+import ciffar.services.WindowService;
+import ciffar.views.WindowView;
+
 public class Bootstrap {
 
-    private WindowFrame windowFrame;
-    private WindowCanvas windowCanvas;
+    private WindowService windowService;
+    private WindowController windowController;
+    private WindowView windowView;
 
-    public Bootstrap(String tile, int windowWidth, int windowHeight) {
-        windowFrame = new WindowFrame(tile, windowWidth, windowHeight);
-        windowCanvas = new WindowCanvas(windowWidth, windowHeight);
+    public Bootstrap() {
+        windowService = new WindowService();
+        windowController = new WindowController();
+        windowView = new WindowView();
+        windowController.setWindowView(windowView);
+        windowController.setWindowService(windowService);
+        windowView.setWindowController(windowController);
+
+
+
+
+
+
+
+
         Engine engine = new Engine();
-        engine.setWindowCanvas(windowCanvas);
+        engine.setWindowController(windowController);
+
 
         engine.start();
 
@@ -18,8 +36,6 @@ public class Bootstrap {
     }
 
     private void setup() {
-        windowFrame.getFrame().add(windowCanvas.getCanvas());
-        windowFrame.getFrame().pack();
 
 
     }

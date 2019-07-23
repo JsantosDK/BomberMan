@@ -6,8 +6,11 @@ import java.awt.image.BufferedImage;
 
 public class Assets {
 
-    static final int width = 25;
-    static final int height = 25;
+    static final int SPRITE_WIDTH = 25;
+    static final int SPRITE_HEIGHT = 25;
+    public final static int GAME_WIDTH = 700;
+    public final static int GAME_HEIGHT = 400;
+    public final static String GAME_TITLE ="My Bomberman";
 
     public static BufferedImage playerDown0;
     public static BufferedImage playerDown1;
@@ -37,30 +40,30 @@ public class Assets {
 
     public static void init() {
         SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("/player/player1.png"));
-        playerDown0 = sheet.cropImage(0 * width, 0 * height, width, height);
-        playerDown1 = sheet.cropImage(0 * width, 1 * height, width, height);
-        playerDown2 = sheet.cropImage(0 * width, 2 * height, width, height);
-        playerUp0 = sheet.cropImage(1 * width, 0 * height, width, height);
-        playerUp1 = sheet.cropImage(1 * width, 1 * height, width, height);
-        playerUp2 = sheet.cropImage(1 * width, 2 * height, width, height);
-        playerLeft0 = sheet.cropImage(2 * width, 0 * height, width, height);
-        playerLeft1 = sheet.cropImage(2 * width, 1 * height, width, height);
-        playerLeft2 = sheet.cropImage(2 * width, 2 * height, width, height);
-        playerRight0 = sheet.cropImage(3 * width, 0 * height, width, height);
-        playerRight1 = sheet.cropImage(3 * width, 1 * height, width, height);
-        playerRight2 = sheet.cropImage(3 * width, 2 * height, width, height);
-        wallBottomLeft = sheet.cropImage(0 * width, 3 * height, width, height);
-        wallBottomRight = sheet.cropImage(1 * width, 3 * height, width, height);
-        wallTopLeft = sheet.cropImage(2 * width, 3 * height, width, height);
-        wallTopRight = sheet.cropImage(3 * width, 3 * height, width, height);
-        wallBottom = sheet.cropImage(0 * width, 4 * height, width, height);
-        wallTop = sheet.cropImage(1 * width, 4 * height, width, height);
-        wallLeft = sheet.cropImage(2 * width, 4 * height, width, height);
-        wallRight = sheet.cropImage(3 * width, 4 * height, width, height);
-        interior0 = sheet.cropImage(0 * width, 5 * height, width, height);
-        interior1 = sheet.cropImage(1 * width, 5 * height, width, height);
-        interior2 = sheet.cropImage(2 * width, 5 * height, width, height);
-        interior3 = sheet.cropImage(3 * width, 5 * height, width, height);
+        playerDown0 = sheet.cropImage(0 * SPRITE_WIDTH, 0 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        playerDown1 = sheet.cropImage(0 * SPRITE_WIDTH, 1 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        playerDown2 = sheet.cropImage(0 * SPRITE_WIDTH, 2 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        playerUp0 = sheet.cropImage(1 * SPRITE_WIDTH, 0 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        playerUp1 = sheet.cropImage(1 * SPRITE_WIDTH, 1 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        playerUp2 = sheet.cropImage(1 * SPRITE_WIDTH, 2 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        playerLeft0 = sheet.cropImage(2 * SPRITE_WIDTH, 0 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        playerLeft1 = sheet.cropImage(2 * SPRITE_WIDTH, 1 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        playerLeft2 = sheet.cropImage(2 * SPRITE_WIDTH, 2 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        playerRight0 = sheet.cropImage(3 * SPRITE_WIDTH, 0 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        playerRight1 = sheet.cropImage(3 * SPRITE_WIDTH, 1 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        playerRight2 = sheet.cropImage(3 * SPRITE_WIDTH, 2 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        wallBottomLeft = sheet.cropImage(0 * SPRITE_WIDTH, 3 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        wallBottomRight = sheet.cropImage(1 * SPRITE_WIDTH, 3 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        wallTopLeft = sheet.cropImage(2 * SPRITE_WIDTH, 3 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        wallTopRight = sheet.cropImage(3 * SPRITE_WIDTH, 3 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        wallBottom = sheet.cropImage(0 * SPRITE_WIDTH, 4 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        wallTop = sheet.cropImage(1 * SPRITE_WIDTH, 4 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        wallLeft = sheet.cropImage(2 * SPRITE_WIDTH, 4 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        wallRight = sheet.cropImage(3 * SPRITE_WIDTH, 4 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        interior0 = sheet.cropImage(0 * SPRITE_WIDTH, 5 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        interior1 = sheet.cropImage(1 * SPRITE_WIDTH, 5 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        interior2 = sheet.cropImage(2 * SPRITE_WIDTH, 5 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        interior3 = sheet.cropImage(3 * SPRITE_WIDTH, 5 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
     }
 
 }

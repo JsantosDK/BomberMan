@@ -1,10 +1,12 @@
 package ciffar.confi;
 
+import ciffar.controllers.WindowController;
+
 public class Engine implements Runnable {
 
     private Thread thread;
     private boolean running;
-    private WindowCanvas windowCanvas;
+    private WindowController windowController;
 
     public void run() {
         int FPS = 60;
@@ -19,10 +21,8 @@ public class Engine implements Runnable {
             lastTime = now;
 
             if (delta >= 1) {
-                windowCanvas.update();
-                windowCanvas.render();
+                windowController.init();
                 delta--;
-                System.out.println("test");
             }
         }
     }
@@ -47,7 +47,7 @@ public class Engine implements Runnable {
         }
     }
 
-    public void setWindowCanvas(WindowCanvas windowCanvas) {
-        this.windowCanvas = windowCanvas;
+    public void setWindowController(WindowController windowController) {
+        this.windowController = windowController;
     }
 }
