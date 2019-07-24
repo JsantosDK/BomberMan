@@ -1,5 +1,6 @@
 package ciffar.controllers;
 
+import ciffar.loaders.KeyLoader;
 import ciffar.services.WindowService;
 import ciffar.views.View;
 
@@ -13,8 +14,16 @@ public class WindowController {
 
     public void init() {
         if (windowService.setupBufferStrategy()) {
+            update();
             windowView.init();
         }
+    }
+
+    private void update() {
+    }
+
+    public void addKeyLoader(KeyLoader keyLoader){
+        windowService.addKeyLoader(keyLoader);
     }
 
     public void setWindowView(View windowView) {

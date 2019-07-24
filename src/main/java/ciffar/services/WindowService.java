@@ -1,6 +1,7 @@
 package ciffar.services;
 
 import ciffar.graphics.Assets;
+import ciffar.loaders.KeyLoader;
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,9 +15,9 @@ public class WindowService {
     private Graphics graphics;
 
     public WindowService() {
-        graphics = null;
         createFrame();
         createCanvas();
+        setupBufferStrategy();
     }
 
     private void createFrame() {
@@ -43,9 +44,10 @@ public class WindowService {
         bufferStrategy = canvas.getBufferStrategy();
         if (bufferStrategy == null) {
             canvas.createBufferStrategy(3);
+            graphics = canvas.getBufferStrategy().getDrawGraphics();
             return false;
         }
-        graphics = bufferStrategy.getDrawGraphics();
+        graphics = canvas.getBufferStrategy().getDrawGraphics();
         return true;
     }
 
@@ -57,5 +59,7 @@ public class WindowService {
         return graphics;
     }
 
-
+    public void addKeyLoader(KeyLoader keyLoader){
+        frame.addKeyListener(keyLoader);
+    }
 }

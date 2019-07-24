@@ -1,12 +1,14 @@
 package ciffar.confi;
 
 import ciffar.controllers.WindowController;
+import ciffar.controllers.entities.creatures.PlayerController;
 
 public class Engine implements Runnable {
 
     private Thread thread;
     private boolean running;
     private WindowController windowController;
+    private PlayerController playerController;
 
     public void run() {
         int FPS = 60;
@@ -21,7 +23,10 @@ public class Engine implements Runnable {
             lastTime = now;
 
             if (delta >= 1) {
+
+                //Needs to be exchange for a gamestate
                 windowController.init();
+                playerController.init();
                 delta--;
             }
         }
@@ -49,5 +54,9 @@ public class Engine implements Runnable {
 
     public void setWindowController(WindowController windowController) {
         this.windowController = windowController;
+    }
+
+    public void setPlayerController(PlayerController playerController) {
+        this.playerController = playerController;
     }
 }

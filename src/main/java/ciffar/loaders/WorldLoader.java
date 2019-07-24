@@ -1,6 +1,4 @@
 package ciffar.loaders;
 
-public class Keyloader {
-
-
+public class WorldLoader {
 }
