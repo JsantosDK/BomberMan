@@ -9,6 +9,7 @@ import java.awt.*;
 public class WindowView implements View {
 
     private WindowController windowController;
+    private WorldView worldView;
     private PlayerView playerView;
 
     public void init() {
@@ -21,6 +22,7 @@ public class WindowView implements View {
         windowController.getGraphics().fillRect(0, 0, Assets.GAME_WIDTH, Assets.GAME_HEIGHT);
 
         //Needs to be exchanged for GameState
+        worldView.init();
         playerView.init();
 
         windowController.getBufferStrategy().show();
@@ -33,5 +35,9 @@ public class WindowView implements View {
 
     public void setPlayerView(PlayerView playerView) {
         this.playerView = playerView;
+    }
+
+    public void setWorldView(WorldView worldView) {
+        this.worldView = worldView;
     }
 }
