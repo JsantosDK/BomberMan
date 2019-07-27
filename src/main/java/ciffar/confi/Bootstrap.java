@@ -6,7 +6,7 @@ import ciffar.graphics.Assets;
 import ciffar.loaders.KeyLoader;
 import ciffar.services.WindowService;
 import ciffar.services.entities.creatures.PlayerService;
-import ciffar.views.PlayerView;
+import ciffar.views.entities.PlayerView;
 import ciffar.views.WindowView;
 
 public class Bootstrap {
@@ -20,6 +20,7 @@ public class Bootstrap {
     private KeyLoader keyLoader;
 
     public Bootstrap() {
+        Assets.init();
         windowService = new WindowService();
         windowController = new WindowController();
         windowView = new WindowView();
@@ -36,11 +37,11 @@ public class Bootstrap {
         playerController.setPlayerView(playerView);
         playerController.setKeyLoader(keyLoader);
         windowView.setPlayerView(playerView);
+        playerView.setCreatureService(playerService);
         playerView.setPlayerController(playerController);
         playerView.setGraphics(windowService.getGraphics());
 
 
-        Assets.init();
         Engine engine = new Engine();
 
 

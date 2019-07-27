@@ -16,7 +16,6 @@ public class KeyLoader implements KeyListener {
         keys = new boolean[256];
     }
 
-
     public void update(){
         up = keys[KeyEvent.VK_W];
         down = keys[KeyEvent.VK_S];
@@ -25,10 +24,7 @@ public class KeyLoader implements KeyListener {
         bomb = keys[KeyEvent.VK_SPACE];
     }
 
-
-    public void keyTyped(KeyEvent e) {
-
-    }
+    public void keyTyped(KeyEvent e) { }
 
     public void keyPressed(KeyEvent e) {
         keys[e.getKeyCode()] = true;
@@ -56,5 +52,9 @@ public class KeyLoader implements KeyListener {
 
     public boolean isBomb() {
         return bomb;
+    }
+
+    public boolean isInUse() {
+        return up || down || left || right;
     }
 }

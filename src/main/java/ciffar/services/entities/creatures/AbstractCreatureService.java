@@ -35,4 +35,11 @@ public abstract class AbstractCreatureService extends AbstractEntityService {
         y += yMove;
     }
 
+    public float getxMove() {
+        return xMove;
+    }
+
+    public float getyMove() {
+        return yMove;
+    }
 }

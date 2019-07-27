@@ -28,9 +28,6 @@ public class PlayerService extends AbstractCreatureService {
         move();
     }
 
-
-
-
 }
 
 

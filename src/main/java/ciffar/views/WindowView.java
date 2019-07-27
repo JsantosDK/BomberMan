@@ -2,6 +2,7 @@ package ciffar.views;
 
 import ciffar.controllers.WindowController;
 import ciffar.graphics.Assets;
+import ciffar.views.entities.PlayerView;
 
 import java.awt.*;
 
