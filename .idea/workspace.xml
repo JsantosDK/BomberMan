@@ -1,263 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0ee5f7d-f4e7-4092-9885-ed5cd36423fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ciffar/services/WorldService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ciffar/views/WorldView.java" afterDir="false" />
+    <list default="true" id="7351fe2f-8c72-4bcd-a601-6c602d0cc140" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/confi/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/confi/Bootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/confi/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/confi/Engine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/graphics/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/graphics/Assets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/views/WindowView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/views/WindowView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/player/player1.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/player/player1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ciffar/confi/Bootstrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/confi/Bootstrap.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ciffar/confi/Engine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/confi/Engine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/controllers/WindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/controllers/WindowController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/controllers/entities/AbstractEntityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/controllers/entities/AbstractEntityController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/controllers/entities/creatures/PlayerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/controllers/entities/creatures/PlayerController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ciffar/graphics/Assets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/graphics/Assets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/graphics/SpriteSheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/graphics/SpriteSheet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/loaders/ImageLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/loaders/ImageLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/loaders/KeyLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/loaders/KeyLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/loaders/WorldLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/loaders/WorldLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/services/AnimationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/services/AnimationService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ciffar/services/WindowService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/services/WindowService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/services/entities/AbstractEntityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/services/entities/AbstractEntityService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/services/entities/creatures/AbstractCreatureService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/services/entities/creatures/AbstractCreatureService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/services/entities/creatures/PlayerService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/services/entities/creatures/PlayerService$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/services/entities/creatures/PlayerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/services/entities/creatures/PlayerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/views/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/views/View.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ciffar/views/WindowView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/views/WindowView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/views/WorldView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/views/WorldView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/views/entities/AbstractCreaturesView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/views/entities/AbstractCreaturesView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/views/entities/PlayerView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/views/entities/PlayerView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/Handler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/Handler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/display/Display.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/display/Display.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/entity/Entity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/entity/Entity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/entity/creatures/Creature.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/entity/creatures/Creature.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/entity/creatures/Directions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/entity/creatures/Directions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/entity/creatures/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/entity/creatures/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/gfx/Assets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/gfx/Assets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/gfx/GameCamera.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/gfx/GameCamera.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/gfx/ImageLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/gfx/ImageLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/gfx/SpriteSheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/gfx/SpriteSheet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/input/KeyManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/input/KeyManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/state/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/state/GameState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/state/GameStateManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/state/GameStateManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/state/MenuState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/state/MenuState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/state/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/state/State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/tile/BottomTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/tile/BottomTile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/tile/InteriorTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/tile/InteriorTile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/tile/Tile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/tile/Tile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/tile/TopTile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/tile/TopTile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/utils/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/utils/Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/world/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/academiadecodigo/bootcamp/world/World.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/player/player1.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/player/player1.png" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="bomberman2d" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/WorldView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1005">
-              <caret line="67" column="103" selection-start-line="67" selection-start-column="103" selection-end-line="67" selection-end-column="103" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#587#588#0" expanded="true" />
-                <element signature="e#3971#3972#0" expanded="true" />
-                <element signature="e#4011#4012#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/services/WorldService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/confi/Engine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1686#1687#0" expanded="true" />
-                <element signature="e#1734#1735#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Enum" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/tile/BottomTile.java" />
-        <option value="$PROJECT_DIR$/resources/level01/world.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/tile/Tile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/gfx/GameCamera.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/Handler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/state/State.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/state/MenuState.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/world/World.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/entity/Entity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/entity/creatures/Creature.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/entity/creatures/Player.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/state/GameState.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/views/Display.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/Bootstrap.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/utils/Display.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/utils/Bootstrap.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/confi/ImageLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/graphics/SpriteSheet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/Game.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/WindowService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/Game.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/confi/WindowCanvas.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/confi/WindowFrame.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/views/View.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/confi/WindowService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/views/StateView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/views/AbstractView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/loaders/Keyloader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/AbstractEntityController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/controllers/WindowController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/entity/creatures/Directions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/services/entities/AbstractEntityService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/services/WindowService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/utils/Utils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/services/entities/creatures/PlayerService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/services/entities/creatures/AbstractCreatureService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/loaders/KeyLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/views/PlayerView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/creatures/PlayerController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/views/entities/AbstractCreaturesView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/views/entities/PlayerView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/services/AnimationService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/views/GameStateView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/confi/Engine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/views/WindowView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/services/WorldService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/views/WorldService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/graphics/Assets.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/views/WorldView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/confi/Bootstrap.java" />
-      </list>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="jdkForImporter" value="12" />
+      </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="16" />
-    <option name="y" value="23" />
-    <option name="width" value="1904" />
-    <option name="height" value="978" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="bomberman2d" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bomberman2d" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bomberman2d" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bomberman2d" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bomberman2d" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bomberman2d" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bomberman2d" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bomberman2d" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bomberman2d" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bomberman2d" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bomberman2d" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bomberman2d" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ciffar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bomberman2d" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bomberman2d" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ciffar" type="462c0819:PsiDirectoryNode" />
-              <item name="confi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bomberman2d" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bomberman2d" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ciffar" type="462c0819:PsiDirectoryNode" />
-              <item name="graphics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bomberman2d" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bomberman2d" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ciffar" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bomberman2d" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bomberman2d" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ciffar" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bomberman2d" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bomberman2d" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bootcamp" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
+  <component name="ProjectId" id="1OeVaW0a1qHNtBa0Ir0l9QLcqqe" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/ciffar" />
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -271,52 +92,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.academiadecodigo.bootcamp.Main" />
-      <module name="bomberman2d" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.academiadecodigo.bootcamp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ciffar.Main" />
       <module name="bomberman2d" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ciffar.services.entities.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.academiadecodigo.bootcamp.Main" />
-      <module name="bomberman2d" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.academiadecodigo.bootcamp.display.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ciffar.Main" />
-      <module name="bomberman2d" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ciffar.loaders.*" />
+          <option name="PATTERN" value="ciffar.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -327,657 +109,31 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="StructureViewFactory">
-    <option name="ACTIVE_ACTIONS" value=",SHOW_NON_PUBLIC,SHOW_FIELDS" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c0ee5f7d-f4e7-4092-9885-ed5cd36423fd" name="Default Changelist" comment="" />
-      <created>1563620947912</created>
+      <changelist id="7351fe2f-8c72-4bcd-a601-6c602d0cc140" name="Default Changelist" comment="" />
+      <created>1564338113743</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1563620947912</updated>
-      <workItem from="1563782811909" duration="1363000" />
-      <workItem from="1563788351312" duration="87000" />
-      <workItem from="1563789631173" duration="4614000" />
-      <workItem from="1563868981664" duration="2718000" />
-      <workItem from="1563881714942" duration="4151000" />
-      <workItem from="1563955499500" duration="6306000" />
-      <workItem from="1563984683270" duration="12000" />
-      <workItem from="1564041000265" duration="181000" />
-      <workItem from="1564042588413" duration="561000" />
-      <workItem from="1564047081719" duration="878000" />
-      <workItem from="1564063971968" duration="7000" />
-      <workItem from="1564063986563" duration="532000" />
-      <workItem from="1564243970866" duration="13925000" />
+      <updated>1564338113743</updated>
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35335000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="3" y="23" width="1917" height="978" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49541286" visible="true" weight="0.17066666" />
-      <window_info id="Structure" order="1" sideWeight="0.5045872" side_tool="true" weight="0.25334382" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.50121653" side_tool="true" weight="0.24940805" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3295711" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32731378" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39729118" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295711" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3295711" />
-      <window_info anchor="bottom" id="Thumbnails" order="8" weight="0.32843137" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3295711" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32731378" />
-      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49541286" visible="true" weight="0.1707841" />
-      <window_info id="Structure" order="1" sideWeight="0.5045872" side_tool="true" weight="0.25334382" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.50121653" side_tool="true" weight="0.24940805" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3295711" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32731378" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39729118" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295711" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3295711" />
-      <window_info anchor="bottom" id="Thumbnails" order="8" weight="0.32843137" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3295711" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32731378" />
-      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-    </layout-to-restore>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="((AnimationService)this).frames" custom="ciffar.services.AnimationService" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/tile/TopTile.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/tile/BottomTile.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/world.java" />
-    <entry file="file://$PROJECT_DIR$/resources/level01/world.txt" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/gfx/GameCamera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#118#119#0" expanded="true" />
-            <element signature="e#149#150#0" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-            <element signature="e#616#617#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#282#283#0" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/gfx/ImageLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/gfx/SpriteSheet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/gfx/Assets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-124">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/confi/WindowFrame.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/display/Display.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="33" column="58" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
-          <folding>
-            <element signature="e#1104#1105#0" expanded="true" />
-            <element signature="e#1132#1133#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/StateView.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/graphics/SpriteSheet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/AbstractEntityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/entity/creatures/Directions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/input/KeyManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-          <folding>
-            <element signature="e#1028#1029#0" expanded="true" />
-            <element signature="e#1056#1057#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/AbstractView.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/loaders/WorldLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/entity/creatures/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/entity/creatures/Creature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/entity/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1026#1027#0" expanded="true" />
-            <element signature="e#1062#1063#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/state/GameStateManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/loaders/KeyLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="57" column="36" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-            <element signature="e#792#793#0" expanded="true" />
-            <element signature="e#1060#1061#0" expanded="true" />
-            <element signature="e#1087#1088#0" expanded="true" />
-            <element signature="e#1112#1113#0" expanded="true" />
-            <element signature="e#1162#1163#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/services/entities/AbstractEntityService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding>
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-            <element signature="e#648#649#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/services/AnimationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/utils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/loaders/ImageLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/state/State.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/services/entities/creatures/AbstractCreatureService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
-          <folding>
-            <element signature="e#1103#1104#0" expanded="true" />
-            <element signature="e#1131#1132#0" expanded="true" />
-            <element signature="e#1162#1163#0" expanded="true" />
-            <element signature="e#1190#1191#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/services/entities/creatures/PlayerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/GameStateView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/services/WindowService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="20" lean-forward="true" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/controllers/WindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/creatures/PlayerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/entities/PlayerView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1441#1442#0" expanded="true" />
-            <element signature="e#1497#1498#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/entities/AbstractCreaturesView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1560#1561#0" expanded="true" />
-            <element signature="e#1614#1615#0" expanded="true" />
-            <element signature="e#1664#1665#0" expanded="true" />
-            <element signature="e#1704#1705#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding>
-            <element signature="e#81#82#0" expanded="true" />
-            <element signature="e#119#120#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/state/MenuState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/WindowView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#993#994#0" expanded="true" />
-            <element signature="e#1037#1038#0" expanded="true" />
-            <element signature="e#1204#1205#0" expanded="true" />
-            <element signature="e#1252#1253#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/graphics/Assets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" column="19" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/tile/Tile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/confi/Engine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1686#1687#0" expanded="true" />
-            <element signature="e#1734#1735#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/confi/Bootstrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="82" selection-start-line="29" selection-start-column="82" selection-end-line="29" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/world/World.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/state/GameState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/services/WorldService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/WorldView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="67" column="103" selection-start-line="67" selection-start-column="103" selection-end-line="67" selection-end-column="103" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#587#588#0" expanded="true" />
-            <element signature="e#3971#3972#0" expanded="true" />
-            <element signature="e#4011#4012#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>bomberman2d</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
