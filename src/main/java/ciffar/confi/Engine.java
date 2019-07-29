@@ -1,6 +1,7 @@
 package ciffar.confi;
 
 import ciffar.controllers.WindowController;
+import ciffar.controllers.WorldController;
 import ciffar.controllers.entities.creatures.PlayerController;
 import ciffar.views.WorldView;
 
@@ -10,7 +11,7 @@ public class Engine implements Runnable {
     private boolean running;
     private WindowController windowController;
     private PlayerController playerController;
-    private WorldView worldView;
+    private WorldController worldController;
 
     public void run() {
         int FPS = 60;
@@ -29,7 +30,7 @@ public class Engine implements Runnable {
                 //Needs to be exchange for a gamestate
                 windowController.init();
                 playerController.init();
-                worldView.init();
+                worldController.init();
                 delta--;
             }
         }
@@ -63,7 +64,7 @@ public class Engine implements Runnable {
         this.playerController = playerController;
     }
 
-    public void setWorldView(WorldView worldView) {
-        this.worldView = worldView;
+    public void setWorldController(WorldController worldController) {
+        this.worldController = worldController;
     }
 }
