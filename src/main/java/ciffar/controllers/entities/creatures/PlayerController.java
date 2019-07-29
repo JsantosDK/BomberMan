@@ -1,6 +1,8 @@
 package ciffar.controllers.entities.creatures;
 
+import ciffar.graphics.Assets;
 import ciffar.loaders.KeyLoader;
+import ciffar.services.WorldService;
 import ciffar.services.entities.creatures.PlayerService;
 import ciffar.views.entities.PlayerView;
 import org.academiadecodigo.bootcamp.entity.creatures.Directions;
@@ -8,6 +10,7 @@ import org.academiadecodigo.bootcamp.entity.creatures.Directions;
 public class PlayerController {
 
     private PlayerService playerService;
+    private WorldService worldService;
     private KeyLoader keyLoader;
     private PlayerView playerView;
     private Directions pointTowardsDirection;
@@ -46,6 +49,14 @@ public class PlayerController {
         }
     }
 
+    public Directions getPointTowardsDirection() {
+        return pointTowardsDirection;
+    }
+
+    public boolean isMoving() {
+        return moving;
+    }
+
     public void setKeyLoader(KeyLoader keyLoader) {
         this.keyLoader = keyLoader;
     }
@@ -54,16 +65,12 @@ public class PlayerController {
         this.playerService = playerService;
     }
 
+    public void setWorldService(WorldService worldService) {
+        this.worldService = worldService;
+    }
+
     public void setPlayerView(PlayerView playerView) {
         this.playerView = playerView;
-    }
-
-    public Directions getPointTowardsDirection() {
-        return pointTowardsDirection;
-    }
-
-    public boolean isMoving() {
-        return moving;
     }
 
 }

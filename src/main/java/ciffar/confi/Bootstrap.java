@@ -42,9 +42,11 @@ public class Bootstrap {
         windowController.setWindowService(windowService);
         windowController.addKeyLoader(keyLoader);
         windowView.setWindowController(windowController);
+        playerService.setWorldService(worldService);
         playerController.setPlayerService(playerService);
         playerController.setPlayerView(playerView);
         playerController.setKeyLoader(keyLoader);
+        playerController.setWorldService(worldService);
         windowView.setPlayerView(playerView);
         playerView.setCreatureService(playerService);
         playerView.setPlayerController(playerController);

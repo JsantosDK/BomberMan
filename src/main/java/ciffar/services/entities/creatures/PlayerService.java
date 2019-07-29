@@ -6,6 +6,10 @@ public class PlayerService extends AbstractCreatureService {
 
     public PlayerService(float x, float y) {
        super(x,y);
+       collisionBox.x = 7;
+       collisionBox.y = 20;
+       collisionBox.width = 8;
+       collisionBox.height = 3;
     }
 
     public void getDirection(Directions directions){

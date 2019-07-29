@@ -1,5 +1,7 @@
 package ciffar.services.entities.creatures;
 
+import ciffar.graphics.Assets;
+import ciffar.services.WorldService;
 import ciffar.services.entities.AbstractEntityService;
 
 public abstract class AbstractCreatureService extends AbstractEntityService {
@@ -13,6 +15,7 @@ public abstract class AbstractCreatureService extends AbstractEntityService {
     protected float speed;
     protected float xMove;
     protected float yMove;
+    protected WorldService worldService;
 
     public AbstractCreatureService(float x, float y) {
         super(x, y, DEFAULT_CREATURE_WIDTH, DEFAULT_CREATURE_HEIGHT);
@@ -30,9 +33,38 @@ public abstract class AbstractCreatureService extends AbstractEntityService {
         yMove = 0;
     }
 
-    protected void move(){
-        x += xMove;
-        y += yMove;
+    protected void move() {
+        if (xMove > 0) {
+            int tx = (int) (x + xMove + collisionBox.x + collisionBox.width) / Assets.SPRITE_WIDTH;
+            if (!collisionWithTile((int) ((y + collisionBox.y) / Assets.SPRITE_WIDTH), tx)) {
+                x += xMove;
+            }
+        }
+        if (xMove < 0){
+            int tx = (int) (x + xMove + collisionBox.x) / Assets.SPRITE_WIDTH;
+            if (!collisionWithTile((int) ((y + collisionBox.y) / Assets.SPRITE_WIDTH), tx)) {
+                x += xMove;
+            }
+        }
+        if (yMove > 0) {
+            int ty = (int) (y + yMove + collisionBox.y + collisionBox.height) / Assets.SPRITE_HEIGHT;
+            if (!collisionWithTile(ty,(int) ((x + collisionBox.x) / Assets.SPRITE_HEIGHT))) {
+                y += yMove;
+            }
+        }
+        if (yMove < 0) {
+            int ty = (int) (y + yMove + collisionBox.y) / Assets.SPRITE_HEIGHT;
+            if (!collisionWithTile(ty,(int) ((x + collisionBox.x) / Assets.SPRITE_HEIGHT))) {
+                y += yMove;
+            }
+        }
+
+
+
+    }
+
+    private boolean collisionWithTile(int x, int y) {
+        return worldService.getWorldGrid()[x][y].isSolid();
     }
 
     public float getxMove() {
@@ -41,5 +73,9 @@ public abstract class AbstractCreatureService extends AbstractEntityService {
 
     public float getyMove() {
         return yMove;
+    }
+
+    public void setWorldService(WorldService worldService) {
+        this.worldService = worldService;
     }
 }
