@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7351fe2f-8c72-4bcd-a601-6c602d0cc140" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ciffar/controllers/WorldController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/confi/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/confi/Bootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/confi/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/confi/Engine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ciffar/models/FloorTile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ciffar/models/ObstacleTile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ciffar/models/Tile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/services/WorldService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/services/WorldService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/views/WorldView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/views/WorldView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/confi/Engine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/confi/Engine.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,33 +23,10 @@
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/controllers/WorldController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#494#495#0" expanded="true" />
-                    <element signature="e#604#605#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/WindowView.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/services/WorldService.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="107">
-                  <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+                <state relative-caret-position="278">
+                  <caret line="65" column="15" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="15" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#477#478#0" expanded="true" />
@@ -68,22 +42,53 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/WorldView.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="345">
+                  <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/WorldView.java">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/models/Tile.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+                <state>
+                  <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
                   <folding>
-                    <element signature="e#2404#2405#0" expanded="true" />
-                    <element signature="e#2444#2445#0" expanded="true" />
-                    <element signature="e#2566#2567#0" expanded="true" />
-                    <element signature="e#2620#2621#0" expanded="true" />
-                    <element signature="e#2805#2806#0" expanded="true" />
-                    <element signature="e#2853#2854#0" expanded="true" />
+                    <element signature="e#201#202#0" expanded="true" />
+                    <element signature="e#251#252#0" expanded="true" />
+                    <element signature="e#307#308#0" expanded="true" />
+                    <element signature="e#343#344#0" expanded="true" />
+                    <element signature="e#375#376#0" expanded="true" />
+                    <element signature="e#403#404#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/models/ObstacleTile.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/models/FloorTile.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="29" />
+                  <folding>
+                    <element signature="e#151#152#0" expanded="true" />
+                    <element signature="e#187#188#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -108,14 +113,16 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/ciffar/loaders/KeyLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/models/Tile.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/models/WallTile.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/models/GroundTile.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/controllers/GridController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/services/WorldService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/confi/Engine.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/confi/Bootstrap.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/controllers/WorldController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ciffar/models/FloorTile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ciffar/models/Tile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ciffar/models/ObstacleTile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ciffar/services/WorldService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/views/WorldView.java" />
       </list>
     </option>
@@ -219,7 +226,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ciffar" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bomberman2d" type="b2602c69:ProjectViewProjectNode" />
@@ -290,18 +297,18 @@
       <updated>1564338113743</updated>
       <workItem from="1564387462544" duration="1326000" />
       <workItem from="1564412727430" duration="69000" />
-      <workItem from="1564419841530" duration="2754000" />
+      <workItem from="1564419841530" duration="3215000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4149000" />
+    <option name="totallyTimeSpent" value="4610000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="978" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2550586" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16613418" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -310,7 +317,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3295711" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3295711" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -457,28 +464,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/models/WallTile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/models/Tile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/controllers/WindowController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -536,25 +521,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/WorldView.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/models/Tile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state>
+          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
           <folding>
-            <element signature="e#2404#2405#0" expanded="true" />
-            <element signature="e#2444#2445#0" expanded="true" />
-            <element signature="e#2566#2567#0" expanded="true" />
-            <element signature="e#2620#2621#0" expanded="true" />
-            <element signature="e#2805#2806#0" expanded="true" />
-            <element signature="e#2853#2854#0" expanded="true" />
+            <element signature="e#201#202#0" expanded="true" />
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#375#376#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/models/FloorTile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="e#151#152#0" expanded="true" />
+            <element signature="e#187#188#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/models/ObstacleTile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/WindowView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/services/WorldService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        <state relative-caret-position="278">
+          <caret line="65" column="15" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#477#478#0" expanded="true" />
@@ -569,10 +579,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/WindowView.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/WorldView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="345">
+          <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
         </state>
       </provider>
     </entry>

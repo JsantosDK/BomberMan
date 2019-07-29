@@ -53,7 +53,6 @@ public class Bootstrap {
         worldController.setWorldService(worldService);
         worldController.setWorldView(worldView);
         worldView.setGraphics(windowService.getGraphics());
-        worldView.setWorldController(worldController);
         worldView.setWorldService(worldService);
 
 

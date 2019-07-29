@@ -28,9 +28,9 @@ public class Engine implements Runnable {
             if (delta >= 1) {
 
                 //Needs to be exchange for a gamestate
-                windowController.init();
                 playerController.init();
                 worldController.init();
+                windowController.init();
                 delta--;
             }
         }
