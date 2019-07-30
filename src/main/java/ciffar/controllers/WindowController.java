@@ -2,7 +2,7 @@ package ciffar.controllers;
 
 import ciffar.loaders.KeyLoader;
 import ciffar.services.WindowService;
-import ciffar.views.View;
+import ciffar.views.entities.View;
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;

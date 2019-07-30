@@ -1,8 +1,10 @@
-package ciffar.models;
+package ciffar.models.tiles;
+
+import ciffar.models.tiles.Tile;
 
 import java.awt.image.BufferedImage;
 
-public class ObstacleTile extends Tile{
+public class ObstacleTile extends Tile {
 
     public ObstacleTile(BufferedImage bufferedImage) {
         super(bufferedImage);

@@ -2,7 +2,7 @@ package ciffar.services;
 
 import java.awt.image.BufferedImage;
 
-public class AnimationService {
+public class Animation {
 
     private int timeBetweenUpdates;
     private int indexOfCurrentImage;
@@ -10,7 +10,7 @@ public class AnimationService {
     private long timer;
     private BufferedImage[] arrayOfImages;
 
-    public AnimationService(int timeBetweenUpdates, BufferedImage[] arrayOfImages) {
+    public Animation(int timeBetweenUpdates, BufferedImage[] arrayOfImages) {
         this.timeBetweenUpdates = timeBetweenUpdates;
         this.arrayOfImages = arrayOfImages;
         indexOfCurrentImage = 0;

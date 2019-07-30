@@ -1,4 +1,6 @@
-package ciffar.models;
+package ciffar.models.tiles;
+
+import ciffar.models.tiles.Tile;
 
 import java.awt.image.BufferedImage;
 

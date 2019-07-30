@@ -25,6 +25,7 @@ public class Assets {
     public static BufferedImage wallLeft;
     public static BufferedImage wallRight;
     public static BufferedImage[] interior;
+    public static BufferedImage[] pilars;
 
 
     public static void init() {
@@ -54,11 +55,18 @@ public class Assets {
         wallTop = sheet.cropImage(0 * SPRITE_WIDTH, 4 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
         wallLeft = sheet.cropImage(2 * SPRITE_WIDTH, 4 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
         wallRight   = sheet.cropImage(3 * SPRITE_WIDTH, 4 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+
         interior = new BufferedImage[4];
         interior[0] = sheet.cropImage(0 * SPRITE_WIDTH, 5 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
         interior[1] = sheet.cropImage(1 * SPRITE_WIDTH, 5 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
         interior[2] = sheet.cropImage(2 * SPRITE_WIDTH, 5 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
         interior[3] = sheet.cropImage(3 * SPRITE_WIDTH, 5 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+
+        pilars = new BufferedImage[2];
+        pilars[0] = sheet.cropImage(1 * SPRITE_WIDTH, 6 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT * 2);
+        pilars[1] = sheet.cropImage(2 * SPRITE_WIDTH, 6 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT * 2);
+
+
     }
 
 }

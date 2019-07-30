@@ -1,21 +1,20 @@
-package ciffar.views.entities;
+package ciffar.views.entities.creatures;
 
-import ciffar.services.AnimationService;
+import ciffar.services.Animation;
 import ciffar.services.entities.creatures.AbstractCreatureService;
 import ciffar.services.entities.creatures.PlayerService;
-import ciffar.views.View;
+import ciffar.views.entities.AbstractEntityView;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
-public abstract class AbstractCreaturesView implements View {
+public abstract class AbstractCreaturesView extends AbstractEntityView {
 
     private AbstractCreatureService creatureService;
-    private Graphics graphics;
-    AnimationService animationDown;
-    AnimationService animationUp;
-    AnimationService animationLeft;
-    AnimationService animationRight;
+    protected Animation animationDown;
+    protected Animation animationUp;
+    protected Animation animationLeft;
+    protected Animation animationRight;
 
     public void init() {
         animationDown.updateFrame();
@@ -31,14 +30,14 @@ public abstract class AbstractCreaturesView implements View {
 
     protected abstract BufferedImage currentCreatureImage();
 
-    BufferedImage movingTowards() {
-        if (creatureService.getyMove() > 0) {
+    protected BufferedImage movingTowards() {
+        if (creatureService.getVerticalMove() > 0) {
             return animationDown.getCurrentFrame();
         }
-        if (creatureService.getyMove() < 0) {
+        if (creatureService.getVerticalMove() < 0) {
             return animationUp.getCurrentFrame();
         }
-        if (creatureService.getxMove() < 0) {
+        if (creatureService.getHorizontalMove() < 0) {
             return animationLeft.getCurrentFrame();
         }
         return animationRight.getCurrentFrame();
@@ -46,10 +45,6 @@ public abstract class AbstractCreaturesView implements View {
 
     public void setCreatureService(PlayerService creatureService) {
         this.creatureService = creatureService;
-    }
-
-    public void setGraphics(Graphics graphics) {
-        this.graphics = graphics;
     }
 
 }

@@ -2,6 +2,7 @@ package ciffar.views;
 
 import ciffar.graphics.Assets;
 import ciffar.services.WorldService;
+import ciffar.views.entities.View;
 
 import java.awt.*;
 

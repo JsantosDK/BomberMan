@@ -1,9 +1,9 @@
 package ciffar.services;
 
 import ciffar.graphics.Assets;
-import ciffar.models.FloorTile;
-import ciffar.models.ObstacleTile;
-import ciffar.models.Tile;
+import ciffar.models.tiles.FloorTile;
+import ciffar.models.tiles.ObstacleTile;
+import ciffar.models.tiles.Tile;
 
 public class WorldService {
 

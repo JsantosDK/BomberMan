@@ -9,12 +9,15 @@ import ciffar.services.WindowService;
 import ciffar.services.WorldService;
 import ciffar.views.WorldView;
 import ciffar.services.entities.creatures.PlayerService;
-import ciffar.views.entities.PlayerView;
+import ciffar.views.entities.creatures.PlayerView;
 import ciffar.views.WindowView;
+
+import java.awt.*;
 
 public class Bootstrap {
 
     private WindowService windowService;
+    private Graphics graphics;
     private WindowController windowController;
     private WindowView windowView;
     private PlayerService playerService;
@@ -24,10 +27,12 @@ public class Bootstrap {
     private WorldController worldController;
     private WorldView worldView;
     private KeyLoader keyLoader;
+    private EntityManager entityManager;
 
     public Bootstrap() {
         Assets.init();
         windowService = new WindowService();
+        graphics = windowService.getGraphics();
         windowController = new WindowController();
         windowView = new WindowView();
         keyLoader = new KeyLoader();
@@ -37,6 +42,8 @@ public class Bootstrap {
         worldService = new WorldService();
         worldController = new WorldController();
         worldView = new WorldView();
+        entityManager = new EntityManager(playerController);
+
 
         windowController.setWindowView(windowView);
         windowController.setWindowService(windowService);
@@ -44,18 +51,19 @@ public class Bootstrap {
         windowView.setWindowController(windowController);
         playerService.setWorldService(worldService);
         playerController.setPlayerService(playerService);
-        playerController.setPlayerView(playerView);
+        playerController.setView(playerView);
         playerController.setKeyLoader(keyLoader);
-        playerController.setWorldService(worldService);
         windowView.setPlayerView(playerView);
         playerView.setCreatureService(playerService);
         playerView.setPlayerController(playerController);
-        playerView.setGraphics(windowService.getGraphics());
+        playerView.setGraphics(graphics);
         windowView.setWorldView(worldView);
         worldController.setWorldService(worldService);
         worldController.setWorldView(worldView);
-        worldView.setGraphics(windowService.getGraphics());
+        worldView.setGraphics(graphics);
         worldView.setWorldService(worldService);
+        entityManager.setGraphics(graphics);
+        windowView.setEntityManager(entityManager);
 
 
         Engine engine = new Engine();

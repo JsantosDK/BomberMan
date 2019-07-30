@@ -2,7 +2,7 @@ package ciffar.services.entities;
 
 import java.awt.*;
 
-public abstract class AbstractEntityService {
+public abstract class AbstractEntityService implements EntityService{
 
     protected float x;
     protected float y;
@@ -33,4 +33,5 @@ public abstract class AbstractEntityService {
     public int getEntityHeight() {
         return entityHeight;
     }
+
 }

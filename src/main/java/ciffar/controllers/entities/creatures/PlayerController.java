@@ -1,20 +1,13 @@
 package ciffar.controllers.entities.creatures;
 
-import ciffar.graphics.Assets;
 import ciffar.loaders.KeyLoader;
-import ciffar.services.WorldService;
 import ciffar.services.entities.creatures.PlayerService;
-import ciffar.views.entities.PlayerView;
 import org.academiadecodigo.bootcamp.entity.creatures.Directions;
 
-public class PlayerController {
+public class PlayerController extends AbstractCreatureController {
 
     private PlayerService playerService;
-    private WorldService worldService;
     private KeyLoader keyLoader;
-    private PlayerView playerView;
-    private Directions pointTowardsDirection;
-    private boolean moving;
 
     public PlayerController() {
         pointTowardsDirection = Directions.DOWN;
@@ -25,12 +18,13 @@ public class PlayerController {
         keyLoader.update();
         if (keyLoader.isInUse()) {
             moving = true;
-            movePlayer();
+            moveCreature();
         } else {moving = false;}
-        playerView.init();
+        view.init();
     }
 
-    private void movePlayer(){
+    @Override
+    protected void moveCreature() {
         if (keyLoader.isUp()){
             pointTowardsDirection = Directions.UP;
             playerService.getDirection(Directions.UP);
@@ -63,14 +57,6 @@ public class PlayerController {
 
     public void setPlayerService(PlayerService playerService) {
         this.playerService = playerService;
-    }
-
-    public void setWorldService(WorldService worldService) {
-        this.worldService = worldService;
-    }
-
-    public void setPlayerView(PlayerView playerView) {
-        this.playerView = playerView;
     }
 
 }

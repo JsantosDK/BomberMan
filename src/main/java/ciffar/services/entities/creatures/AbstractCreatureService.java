@@ -13,66 +13,69 @@ public abstract class AbstractCreatureService extends AbstractEntityService {
 
     protected int health;
     protected float speed;
-    protected float xMove;
-    protected float yMove;
+    protected float horizontalMove;
+    protected float verticalMove;
     protected WorldService worldService;
 
     public AbstractCreatureService(float x, float y) {
         super(x, y, DEFAULT_CREATURE_WIDTH, DEFAULT_CREATURE_HEIGHT);
         health = DEFAULT_HEALTH;
         speed = DEFAULT_SPEED;
-        xMove = 0;
-        yMove = 0;
+        horizontalMove = 0;
+        verticalMove = 0;
     }
 
     public AbstractCreatureService(float x, float y, int entityWidth, int entityHeight, int health, float speed) {
         super(x, y, entityWidth, entityHeight);
         this.health = health;
         this.speed = speed;
-        xMove = 0;
-        yMove = 0;
+        horizontalMove = 0;
+        verticalMove = 0;
     }
 
+
+
     protected void move() {
-        if (xMove > 0) {
-            int tx = (int) (x + xMove + collisionBox.x + collisionBox.width) / Assets.SPRITE_WIDTH;
-            if (!collisionWithTile((int) ((y + collisionBox.y) / Assets.SPRITE_WIDTH), tx)) {
-                x += xMove;
+        if (horizontalMove > 0) {
+            if (!collisionWithTile(xCollisionLimit(collisionBox.width), (int) ((y + collisionBox.y) / Assets.SPRITE_HEIGHT))) {
+                x += horizontalMove;
             }
         }
-        if (xMove < 0){
-            int tx = (int) (x + xMove + collisionBox.x) / Assets.SPRITE_WIDTH;
-            if (!collisionWithTile((int) ((y + collisionBox.y) / Assets.SPRITE_WIDTH), tx)) {
-                x += xMove;
+        if (horizontalMove < 0){
+            if (!collisionWithTile(xCollisionLimit(0), (int) ((y + collisionBox.y) / Assets.SPRITE_HEIGHT))) {
+                x += horizontalMove;
             }
         }
-        if (yMove > 0) {
-            int ty = (int) (y + yMove + collisionBox.y + collisionBox.height) / Assets.SPRITE_HEIGHT;
-            if (!collisionWithTile(ty,(int) ((x + collisionBox.x) / Assets.SPRITE_HEIGHT))) {
-                y += yMove;
+        if (verticalMove > 0) {
+            if (!collisionWithTile((int) ((x + collisionBox.x) / Assets.SPRITE_WIDTH), yCollisionLimit(collisionBox.height))) {
+                y += verticalMove;
             }
         }
-        if (yMove < 0) {
-            int ty = (int) (y + yMove + collisionBox.y) / Assets.SPRITE_HEIGHT;
-            if (!collisionWithTile(ty,(int) ((x + collisionBox.x) / Assets.SPRITE_HEIGHT))) {
-                y += yMove;
+        if (verticalMove < 0) {
+            if (!collisionWithTile((int) ((x + collisionBox.x) / Assets.SPRITE_WIDTH), yCollisionLimit(0))) {
+                y += verticalMove;
             }
         }
+    }
 
+    private int xCollisionLimit(int collisionBoxWidth){
+        return (int) (x + horizontalMove + collisionBox.x + collisionBoxWidth) / Assets.SPRITE_WIDTH;
+    }
 
-
+    private int yCollisionLimit( int collisionBoxHeight){
+        return (int) (y + verticalMove + collisionBox.y + collisionBoxHeight) / Assets.SPRITE_HEIGHT;
     }
 
     private boolean collisionWithTile(int x, int y) {
-        return worldService.getWorldGrid()[x][y].isSolid();
+        return worldService.getWorldGrid()[y][x].isSolid();
     }
 
-    public float getxMove() {
-        return xMove;
+    public float getHorizontalMove() {
+        return horizontalMove;
     }
 
-    public float getyMove() {
-        return yMove;
+    public float getVerticalMove() {
+        return verticalMove;
     }
 
     public void setWorldService(WorldService worldService) {

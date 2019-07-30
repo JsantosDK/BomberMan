@@ -9,24 +9,24 @@ public class PlayerService extends AbstractCreatureService {
        collisionBox.x = 7;
        collisionBox.y = 20;
        collisionBox.width = 8;
-       collisionBox.height = 3;
+       collisionBox.height = 0;
     }
 
     public void getDirection(Directions directions){
-        xMove = 0;
-        yMove = 0;
+        horizontalMove = 0;
+        verticalMove = 0;
         switch (directions){
             case UP:
-                yMove = -speed;
+                verticalMove = -speed;
                 break;
             case DOWN:
-                yMove = speed;
+                verticalMove = speed;
                 break;
             case LEFT:
-                xMove = -speed;
+                horizontalMove = -speed;
                 break;
             case RIGHT:
-                xMove = speed;
+                horizontalMove = speed;
                 break;
         }
         move();

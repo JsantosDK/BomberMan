@@ -1,8 +1,7 @@
-package ciffar.views;
-
-import java.awt.*;
+package ciffar.views.entities;
 
 public interface View {
 
     void init();
+
 }

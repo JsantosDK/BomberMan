@@ -1,8 +1,8 @@
-package ciffar.views.entities;
+package ciffar.views.entities.creatures;
 
 import ciffar.controllers.entities.creatures.PlayerController;
 import ciffar.graphics.Assets;
-import ciffar.services.AnimationService;
+import ciffar.services.Animation;
 import org.academiadecodigo.bootcamp.entity.creatures.Directions;
 
 import java.awt.image.BufferedImage;
@@ -12,10 +12,10 @@ public class PlayerView extends AbstractCreaturesView {
     private PlayerController playerController;
 
     public PlayerView() {
-        animationDown = new AnimationService(100, Assets.playerDown);
-        animationUp = new AnimationService(100, Assets.playerUp);
-        animationLeft = new AnimationService(100, Assets.playerLeft);
-        animationRight = new AnimationService(100, Assets.playerRight);
+        animationDown = new Animation(100, Assets.playerDown);
+        animationUp = new Animation(100, Assets.playerUp);
+        animationLeft = new Animation(100, Assets.playerLeft);
+        animationRight = new Animation(100, Assets.playerRight);
     }
 
     protected BufferedImage currentCreatureImage() {

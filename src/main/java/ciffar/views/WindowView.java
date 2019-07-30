@@ -1,8 +1,10 @@
 package ciffar.views;
 
+import ciffar.confi.EntityManager;
 import ciffar.controllers.WindowController;
 import ciffar.graphics.Assets;
-import ciffar.views.entities.PlayerView;
+import ciffar.views.entities.creatures.PlayerView;
+import ciffar.views.entities.View;
 
 import java.awt.*;
 
@@ -11,6 +13,7 @@ public class WindowView implements View {
     private WindowController windowController;
     private WorldView worldView;
     private PlayerView playerView;
+    private EntityManager entityManager;
 
     public void init() {
         render();
@@ -22,6 +25,7 @@ public class WindowView implements View {
         windowController.getGraphics().fillRect(0, 0, Assets.GAME_WIDTH, Assets.GAME_HEIGHT);
 
         //Needs to be exchanged for GameState
+        entityManager.render();
         worldView.init();
         playerView.init();
 
@@ -39,5 +43,9 @@ public class WindowView implements View {
 
     public void setWorldView(WorldView worldView) {
         this.worldView = worldView;
+    }
+
+    public void setEntityManager(EntityManager entityManager) {
+        this.entityManager = entityManager;
     }
 }
