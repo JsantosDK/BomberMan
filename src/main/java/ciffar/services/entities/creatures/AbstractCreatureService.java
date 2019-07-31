@@ -7,7 +7,7 @@ import ciffar.services.entities.AbstractEntityService;
 public abstract class AbstractCreatureService extends AbstractEntityService {
 
     protected final int DEFAULT_HEALTH = 10;
-    protected final float DEFAULT_SPEED = 3f;
+    protected final float DEFAULT_SPEED = 1f;
     protected static final int DEFAULT_CREATURE_WIDTH = 25;
     protected static final int DEFAULT_CREATURE_HEIGHT = 25;
 

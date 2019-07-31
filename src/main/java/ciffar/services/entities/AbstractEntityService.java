@@ -34,4 +34,7 @@ public abstract class AbstractEntityService implements EntityService{
         return entityHeight;
     }
 
+    public Rectangle getCollisionBox() {
+        return collisionBox;
+    }
 }

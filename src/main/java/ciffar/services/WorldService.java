@@ -1,5 +1,7 @@
 package ciffar.services;
 
+import ciffar.confi.EntityManager;
+import ciffar.controllers.entities.objects.PilarController;
 import ciffar.graphics.Assets;
 import ciffar.models.tiles.FloorTile;
 import ciffar.models.tiles.ObstacleTile;
@@ -10,6 +12,7 @@ public class WorldService {
     private int worldWidth;
     private int worldHeight;
     private Tile[][] worldGrid;
+    private EntityManager entityManager;
 
     public WorldService() {
         worldWidth = Assets.GAME_WIDTH / Assets.SPRITE_WIDTH;
@@ -56,7 +59,12 @@ public class WorldService {
                     worldGrid[i][j] = new ObstacleTile(Assets.wallRight);
                     continue;
                 }
+
                 worldGrid[i][j] = new FloorTile(Assets.interior[(int) (Math.random() * 4)]);
+
+                if ( i%2 != 0 && j%2 == 0 && (i < worldHeight - 2 && j < worldWidth - 2 ) ){
+                    entityManager.addEntity(new PilarController( j * Assets.SPRITE_WIDTH, i * Assets.SPRITE_HEIGHT, entityManager.getGraphics()));
+                }
             }
         }
     }
@@ -71,5 +79,9 @@ public class WorldService {
 
     public int getWorldHeight() {
         return worldHeight;
+    }
+
+    public void setEntityManager(EntityManager entityManager) {
+        this.entityManager = entityManager;
     }
 }

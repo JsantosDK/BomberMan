@@ -25,9 +25,9 @@ public class WindowView implements View {
         windowController.getGraphics().fillRect(0, 0, Assets.GAME_WIDTH, Assets.GAME_HEIGHT);
 
         //Needs to be exchanged for GameState
-        entityManager.render();
         worldView.init();
-        playerView.init();
+        entityManager.render();
+        //playerView.init();
 
         windowController.getBufferStrategy().show();
         windowController.getGraphics().dispose();

@@ -25,6 +25,8 @@ public abstract class AbstractCreaturesView extends AbstractEntityView {
     }
 
     protected void render(Graphics graphics) {
+        graphics.setColor(Color.BLUE);
+        graphics.fillRect((int) (creatureService.getX() + creatureService.getCollisionBox().x), (int) (creatureService.getY() + creatureService.getCollisionBox().y), creatureService.getCollisionBox().width, creatureService.getCollisionBox().height);
         graphics.drawImage(currentCreatureImage(), (int) creatureService.getX(), (int) creatureService.getY(), creatureService.getEntityWidth(), creatureService.getEntityHeight(), null);
     }
 

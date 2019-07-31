@@ -58,12 +58,13 @@ public class Bootstrap {
         playerView.setPlayerController(playerController);
         playerView.setGraphics(graphics);
         windowView.setWorldView(worldView);
+        worldService.setEntityManager(entityManager);
         worldController.setWorldService(worldService);
         worldController.setWorldView(worldView);
         worldView.setGraphics(graphics);
         worldView.setWorldService(worldService);
-        entityManager.setGraphics(graphics);
         windowView.setEntityManager(entityManager);
+        entityManager.setGraphics(graphics);
 
 
         Engine engine = new Engine();

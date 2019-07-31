@@ -1,7 +1,7 @@
 package ciffar.confi;
 
+import ciffar.controllers.entities.EntityController;
 import ciffar.controllers.entities.creatures.PlayerController;
-import org.academiadecodigo.bootcamp.entity.Entity;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -9,35 +9,38 @@ import java.util.List;
 
 public class EntityManager {
 
-    private PlayerController playerController;
-    private List<Entity> entities;
+    private List<EntityController> entities;
     private Graphics graphics;
 
     public EntityManager(PlayerController playerController) {
-        this.playerController = playerController;
         entities = new ArrayList<>();
-        //entities.add(new Pilar(100,100));
+        entities.add(playerController);
+
     }
 
     public void update(){
         for (int i = 0; i < entities.size(); i++) {
-            Entity entity = entities.get(i);
-            entity.update();
+            EntityController entity = entities.get(i);
+            entity.init();
         }
 
     }
 
     public void render(){
-        for (Entity e: entities) {
-            e.render(graphics);
+        for (EntityController e: entities) {
+            e.init();
         }
     }
 
-    public void addEntity(Entity entity){
+    public void addEntity(EntityController entity){
         entities.add(entity);
     }
 
     public void setGraphics(Graphics graphics) {
         this.graphics = graphics;
+    }
+
+    public Graphics getGraphics() {
+        return graphics;
     }
 }
