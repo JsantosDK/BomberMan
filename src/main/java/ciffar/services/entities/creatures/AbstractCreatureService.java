@@ -1,5 +1,6 @@
 package ciffar.services.entities.creatures;
 
+import ciffar.models.CollisionDetector;
 import ciffar.graphics.Assets;
 import ciffar.services.WorldService;
 import ciffar.services.entities.AbstractEntityService;
@@ -16,6 +17,7 @@ public abstract class AbstractCreatureService extends AbstractEntityService {
     protected float horizontalMove;
     protected float verticalMove;
     protected WorldService worldService;
+    private CollisionDetector collisionDetector;
 
     public AbstractCreatureService(float x, float y) {
         super(x, y, DEFAULT_CREATURE_WIDTH, DEFAULT_CREATURE_HEIGHT);
@@ -36,22 +38,22 @@ public abstract class AbstractCreatureService extends AbstractEntityService {
 
 
     protected void move() {
-        if (horizontalMove > 0) {
+        if (horizontalMove > 0 && !collisionDetector.crash(this) ) {
             if (!collisionWithTile(xCollisionLimit(collisionBox.width), (int) ((y + collisionBox.y) / Assets.SPRITE_HEIGHT))) {
                 x += horizontalMove;
             }
         }
-        if (horizontalMove < 0){
+        if (horizontalMove < 0 && !collisionDetector.crash(this)){
             if (!collisionWithTile(xCollisionLimit(0), (int) ((y + collisionBox.y) / Assets.SPRITE_HEIGHT))) {
                 x += horizontalMove;
             }
         }
-        if (verticalMove > 0) {
+        if (verticalMove > 0 && !collisionDetector.crash(this)) {
             if (!collisionWithTile((int) ((x + collisionBox.x) / Assets.SPRITE_WIDTH), yCollisionLimit(collisionBox.height))) {
                 y += verticalMove;
             }
         }
-        if (verticalMove < 0) {
+        if (verticalMove < 0 && !collisionDetector.crash(this)) {
             if (!collisionWithTile((int) ((x + collisionBox.x) / Assets.SPRITE_WIDTH), yCollisionLimit(0))) {
                 y += verticalMove;
             }
@@ -81,4 +83,9 @@ public abstract class AbstractCreatureService extends AbstractEntityService {
     public void setWorldService(WorldService worldService) {
         this.worldService = worldService;
     }
+
+    public void setCollisionDetector(CollisionDetector collisionDetector) {
+        this.collisionDetector = collisionDetector;
+    }
+
 }

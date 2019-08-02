@@ -59,4 +59,8 @@ public class PlayerController extends AbstractCreatureController {
         this.playerService = playerService;
     }
 
+    @Override
+    public float getBase() {
+        return playerService.getY() + playerService.getEntityHeight();
+    }
 }

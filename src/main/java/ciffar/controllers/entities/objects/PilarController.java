@@ -23,4 +23,12 @@ public class PilarController extends AbstractObjectController {
         pilarView.init();
     }
 
+    public PilarService getPilarService() {
+        return pilarService;
+    }
+
+    @Override
+    public float getBase() {
+        return pilarService.getY() + pilarService.getEntityHeight();
+    }
 }

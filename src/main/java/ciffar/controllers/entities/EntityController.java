@@ -6,5 +6,5 @@ public interface EntityController {
 
     void init();
     void setView(View view);
-
+    float getBase();
 }

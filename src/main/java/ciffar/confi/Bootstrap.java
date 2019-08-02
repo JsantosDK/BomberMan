@@ -53,7 +53,6 @@ public class Bootstrap {
         playerController.setPlayerService(playerService);
         playerController.setView(playerView);
         playerController.setKeyLoader(keyLoader);
-        windowView.setPlayerView(playerView);
         playerView.setCreatureService(playerService);
         playerView.setPlayerController(playerController);
         playerView.setGraphics(graphics);
@@ -65,6 +64,7 @@ public class Bootstrap {
         worldView.setWorldService(worldService);
         windowView.setEntityManager(entityManager);
         entityManager.setGraphics(graphics);
+        playerService.setCollisionDetector(entityManager.getCollisionDetector());
 
 
         Engine engine = new Engine();
@@ -77,9 +77,8 @@ public class Bootstrap {
 
         //Needs to be exchanged for a game state
         engine.setWindowController(windowController);
-        engine.setPlayerController(playerController);
         engine.setWorldController(worldController);
-
+        engine.setEntityManager(entityManager);
         engine.start();
 
 

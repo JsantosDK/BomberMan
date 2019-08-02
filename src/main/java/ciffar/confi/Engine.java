@@ -10,8 +10,8 @@ public class Engine implements Runnable {
     private Thread thread;
     private boolean running;
     private WindowController windowController;
-    private PlayerController playerController;
     private WorldController worldController;
+    private EntityManager entityManager;
 
     public void run() {
         int FPS = 60;
@@ -28,9 +28,9 @@ public class Engine implements Runnable {
             if (delta >= 1) {
 
                 //Needs to be exchange for a gamestate
-                playerController.init();
                 worldController.init();
                 windowController.init();
+                entityManager.update();
                 delta--;
             }
         }
@@ -60,11 +60,11 @@ public class Engine implements Runnable {
         this.windowController = windowController;
     }
 
-    public void setPlayerController(PlayerController playerController) {
-        this.playerController = playerController;
-    }
-
     public void setWorldController(WorldController worldController) {
         this.worldController = worldController;
+    }
+
+    public void setEntityManager(EntityManager entityManager) {
+        this.entityManager = entityManager;
     }
 }

@@ -63,7 +63,8 @@ public class WorldService {
                 worldGrid[i][j] = new FloorTile(Assets.interior[(int) (Math.random() * 4)]);
 
                 if ( i%2 != 0 && j%2 == 0 && (i < worldHeight - 2 && j < worldWidth - 2 ) ){
-                    entityManager.addEntity(new PilarController( j * Assets.SPRITE_WIDTH, i * Assets.SPRITE_HEIGHT, entityManager.getGraphics()));
+                    PilarController pilarController = new PilarController( j * Assets.SPRITE_WIDTH, i * Assets.SPRITE_HEIGHT, entityManager.getGraphics());
+                    entityManager.addEntity(pilarController, pilarController.getPilarService());
                 }
             }
         }

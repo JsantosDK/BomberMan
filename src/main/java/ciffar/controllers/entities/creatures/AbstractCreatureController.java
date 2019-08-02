@@ -9,8 +9,6 @@ public abstract class AbstractCreatureController extends AbstractEntityControlle
     protected Directions pointTowardsDirection;
     protected boolean moving;
 
-
-
     protected abstract void moveCreature();
 
 }

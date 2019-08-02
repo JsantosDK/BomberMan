@@ -12,7 +12,6 @@ public class WindowView implements View {
 
     private WindowController windowController;
     private WorldView worldView;
-    private PlayerView playerView;
     private EntityManager entityManager;
 
     public void init() {
@@ -26,8 +25,7 @@ public class WindowView implements View {
 
         //Needs to be exchanged for GameState
         worldView.init();
-        entityManager.render();
-        //playerView.init();
+        entityManager.init();
 
         windowController.getBufferStrategy().show();
         windowController.getGraphics().dispose();
@@ -37,10 +35,6 @@ public class WindowView implements View {
         this.windowController = windowController;
     }
 
-    public void setPlayerView(PlayerView playerView) {
-        this.playerView = playerView;
-    }
-
     public void setWorldView(WorldView worldView) {
         this.worldView = worldView;
     }
@@ -48,4 +42,5 @@ public class WindowView implements View {
     public void setEntityManager(EntityManager entityManager) {
         this.entityManager = entityManager;
     }
+
 }
