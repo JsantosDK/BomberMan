@@ -1,11 +1,13 @@
 package ciffar.services;
 
-import ciffar.confi.EntityManager;
-import ciffar.controllers.entities.objects.PilarController;
+import ciffar.models.EntityManager;
+import ciffar.controllers.entities.objects.PillarController;
 import ciffar.graphics.Assets;
 import ciffar.models.tiles.FloorTile;
 import ciffar.models.tiles.ObstacleTile;
 import ciffar.models.tiles.Tile;
+import ciffar.services.entities.objects.PillarService;
+import ciffar.views.entities.objects.PillarView;
 
 public class WorldService {
 
@@ -59,15 +61,25 @@ public class WorldService {
                     worldGrid[i][j] = new ObstacleTile(Assets.wallRight);
                     continue;
                 }
-
                 worldGrid[i][j] = new FloorTile(Assets.interior[(int) (Math.random() * 4)]);
-
                 if ( i%2 != 0 && j%2 == 0 && (i < worldHeight - 2 && j < worldWidth - 2 ) ){
-                    PilarController pilarController = new PilarController( j * Assets.SPRITE_WIDTH, i * Assets.SPRITE_HEIGHT, entityManager.getGraphics());
-                    entityManager.addEntity(pilarController, pilarController.getPilarService());
+                    createPillarTile(j * Assets.SPRITE_WIDTH, i * Assets.SPRITE_HEIGHT);
                 }
             }
         }
+    }
+
+    private void createPillarTile(int x, int y){
+        PillarController pillarController = new PillarController();
+        PillarService pillarService = new PillarService(x,y);
+        PillarView pillarView = new PillarView();
+
+        pillarView.setGraphics(entityManager.getGraphics());
+        pillarView.setPillarService(pillarService);
+        pillarController.setPillarService(pillarService);
+        pillarController.setPillarView(pillarView);
+
+        entityManager.addEntity(pillarController, pillarService);
     }
 
     public Tile[][] getWorldGrid() {

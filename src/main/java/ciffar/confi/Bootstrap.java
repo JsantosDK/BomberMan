@@ -5,6 +5,7 @@ import ciffar.controllers.WorldController;
 import ciffar.controllers.entities.creatures.PlayerController;
 import ciffar.graphics.Assets;
 import ciffar.loaders.KeyLoader;
+import ciffar.models.EntityManager;
 import ciffar.services.WindowService;
 import ciffar.services.WorldService;
 import ciffar.views.WorldView;
@@ -28,9 +29,10 @@ public class Bootstrap {
     private WorldView worldView;
     private KeyLoader keyLoader;
     private EntityManager entityManager;
+    private Assets assets;
 
     public Bootstrap() {
-        Assets.init();
+        assets = new Assets();
         windowService = new WindowService();
         graphics = windowService.getGraphics();
         windowController = new WindowController();
@@ -42,9 +44,9 @@ public class Bootstrap {
         worldService = new WorldService();
         worldController = new WorldController();
         worldView = new WorldView();
-        entityManager = new EntityManager(playerController);
+        entityManager = new EntityManager();
 
-
+        assets.init();
         windowController.setWindowView(windowView);
         windowController.setWindowService(windowService);
         windowController.addKeyLoader(keyLoader);
@@ -65,6 +67,7 @@ public class Bootstrap {
         windowView.setEntityManager(entityManager);
         entityManager.setGraphics(graphics);
         playerService.setCollisionDetector(entityManager.getCollisionDetector());
+        entityManager.addEntity(playerController,playerService);
 
 
         Engine engine = new Engine();

@@ -1,9 +1,8 @@
 package ciffar.views;
 
-import ciffar.confi.EntityManager;
+import ciffar.models.EntityManager;
 import ciffar.controllers.WindowController;
 import ciffar.graphics.Assets;
-import ciffar.views.entities.creatures.PlayerView;
 import ciffar.views.entities.View;
 
 import java.awt.*;

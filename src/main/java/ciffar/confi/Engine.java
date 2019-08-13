@@ -2,8 +2,7 @@ package ciffar.confi;
 
 import ciffar.controllers.WindowController;
 import ciffar.controllers.WorldController;
-import ciffar.controllers.entities.creatures.PlayerController;
-import ciffar.views.WorldView;
+import ciffar.models.EntityManager;
 
 public class Engine implements Runnable {
 
@@ -30,7 +29,7 @@ public class Engine implements Runnable {
                 //Needs to be exchange for a gamestate
                 worldController.init();
                 windowController.init();
-                entityManager.update();
+                entityManager.init();
                 delta--;
             }
         }

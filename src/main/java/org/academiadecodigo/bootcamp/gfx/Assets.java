@@ -34,7 +34,7 @@ public class Assets {
 
 
     public static void init(){
-        SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("/player/player1.png"));
+        SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("SpriteSheet.png"));
         playerDown0 = sheet.crop(0 * width,0 * height,width,height);
         playerDown1  = sheet.crop(0 * width,1 * height,width,height);
         playerDown2  = sheet.crop(0 * width,2 * height,width,height);

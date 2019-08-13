@@ -1,7 +1,5 @@
 package ciffar.models.tiles;
 
-import ciffar.models.tiles.Tile;
-
 import java.awt.image.BufferedImage;
 
 public class FloorTile extends Tile {

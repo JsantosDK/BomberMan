@@ -10,12 +10,12 @@ public class CollisionDetector {
 
     private List<EntityService> entityList;
 
-    public boolean crash(AbstractCreatureService abstractCreatureService){
+    public boolean crash(AbstractCreatureService creatureService){
         for (EntityService entity: entityList) {
-            if (entity.getCollisionBox().equals(abstractCreatureService.getCollisionBox())){
+            if (entity.getCollisionBox().equals(creatureService.getCollisionBox())){
                 continue;
             }
-            if (gridCollisionBox(abstractCreatureService, abstractCreatureService.getHorizontalMove(),abstractCreatureService.getVerticalMove()).intersects(gridCollisionBox(entity))){
+            if (gridCollisionBox(creatureService, creatureService.getHorizontalMove(),creatureService.getVerticalMove()).intersects(gridCollisionBox(entity))){
                 return true;
             }
         }
@@ -26,12 +26,12 @@ public class CollisionDetector {
         this.entityList = entityList;
     }
 
-    private Rectangle gridCollisionBox(EntityService entityService){
-        return new Rectangle((int) entityService.getX() + entityService.getCollisionBox().x, (int)entityService.getY() + entityService.getCollisionBox().y, entityService.getCollisionBox().width, entityService.getCollisionBox().height);
+    private Rectangle gridCollisionBox(EntityService entity){
+        return new Rectangle((int) entity.getX() + entity.getCollisionBox().x, (int)entity.getY() + entity.getCollisionBox().y, entity.getCollisionBox().width, entity.getCollisionBox().height);
     }
 
-    private Rectangle gridCollisionBox(EntityService entityService, float x, float y){
-        return new Rectangle((int) (entityService.getX() + entityService.getCollisionBox().x + x), (int) (entityService.getY() + entityService.getCollisionBox().y + y), entityService.getCollisionBox().width, entityService.getCollisionBox().height);
+    private Rectangle gridCollisionBox(EntityService entity, float horizontalMove, float verticalMove){
+        return new Rectangle((int) (entity.getX() + entity.getCollisionBox().x + horizontalMove), (int) (entity.getY() + entity.getCollisionBox().y + verticalMove), entity.getCollisionBox().width, entity.getCollisionBox().height);
     }
 
 }
