@@ -1,12 +1,15 @@
 package ciffar.services;
 
+import ciffar.controllers.entities.objects.BoxController;
 import ciffar.models.EntityManager;
 import ciffar.controllers.entities.objects.PillarController;
 import ciffar.graphics.Assets;
 import ciffar.models.tiles.FloorTile;
 import ciffar.models.tiles.ObstacleTile;
 import ciffar.models.tiles.Tile;
+import ciffar.services.entities.objects.BoxService;
 import ciffar.services.entities.objects.PillarService;
+import ciffar.views.entities.objects.BoxView;
 import ciffar.views.entities.objects.PillarView;
 
 public class WorldService {
@@ -62,14 +65,30 @@ public class WorldService {
                     continue;
                 }
                 worldGrid[i][j] = new FloorTile(Assets.interior[(int) (Math.random() * 4)]);
-                if ( i%2 != 0 && j%2 == 0 && (i < worldHeight - 2 && j < worldWidth - 2 ) ){
-                    createPillarTile(j * Assets.SPRITE_WIDTH, i * Assets.SPRITE_HEIGHT);
+
+                if ( (((i < 2 && j > 2) || (i > 2 && j < 2)) || ((i >= 2 && j >= 2) && !(i%2 == 0 && j%2==0))) && Math.random()>0.7  ){
+                    createBoxObject(j * Assets.SPRITE_WIDTH, i * Assets.SPRITE_HEIGHT);
+                } else if ( i%2 == 0 && j%2 == 0 && (i < worldHeight - 2 && j < worldWidth - 2 ) ) {
+                    createPillarObject(j * Assets.SPRITE_WIDTH, (i - 1) * Assets.SPRITE_HEIGHT );
                 }
             }
         }
     }
 
-    private void createPillarTile(int x, int y){
+    private void createBoxObject(int x, int y){
+        BoxController boxController = new BoxController();
+        BoxService boxService = new BoxService(x,y);
+        BoxView boxView = new BoxView();
+
+        boxView.setGraphics(entityManager.getGraphics());
+        boxView.setBoxService(boxService);
+        boxController.setBoxService(boxService);
+        boxController.setBoxView(boxView);
+
+        entityManager.addEntity(boxController,boxService);
+    }
+
+    private void createPillarObject(int x, int y){
         PillarController pillarController = new PillarController();
         PillarService pillarService = new PillarService(x,y);
         PillarView pillarView = new PillarView();

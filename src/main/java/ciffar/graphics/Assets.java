@@ -27,6 +27,7 @@ public class Assets {
     public static BufferedImage wallRight;
     public static BufferedImage[] interior;
     public static BufferedImage pillar;
+    public static BufferedImage box;
 
     private  BufferedImage cropImage(int x, int y, int width, int height) {
         return sheet.getSubimage(x, y, width, height);
@@ -67,7 +68,7 @@ public class Assets {
 
         pillar = cropImage(0 * SPRITE_WIDTH, 6 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT * 2);
 
-
+        box = cropImage(1 * SPRITE_WIDTH, 7 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
 
     }
 
