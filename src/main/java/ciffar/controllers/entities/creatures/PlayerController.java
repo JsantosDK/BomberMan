@@ -43,13 +43,7 @@ public class PlayerController extends AbstractCreatureController {
         }
     }
 
-    public Directions getPointTowardsDirection() {
-        return pointTowardsDirection;
-    }
 
-    public boolean isMoving() {
-        return moving;
-    }
 
     public void setKeyLoader(KeyLoader keyLoader) {
         this.keyLoader = keyLoader;
@@ -62,5 +56,10 @@ public class PlayerController extends AbstractCreatureController {
     @Override
     public float getBase() {
         return playerService.getY() + playerService.getEntityHeight();
+    }
+
+    @Override
+    public float getY() {
+        return playerService.getY();
     }
 }

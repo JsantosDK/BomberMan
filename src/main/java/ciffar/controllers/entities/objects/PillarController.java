@@ -18,6 +18,11 @@ public class PillarController extends AbstractObjectController {
         return pillarService.getY() + pillarService.getEntityHeight();
     }
 
+    @Override
+    public float getY() {
+        return pillarService.getY();
+    }
+
     public void setPillarService(PillarService pillarService) {
         this.pillarService = pillarService;
         this.pillarService.getCollisionBox().setBounds(1,31,23,18);

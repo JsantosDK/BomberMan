@@ -28,6 +28,10 @@ public class Assets {
     public static BufferedImage[] interior;
     public static BufferedImage pillar;
     public static BufferedImage box;
+    public static BufferedImage[] enemyDown;
+    public static BufferedImage[] enemyUp;
+    public static BufferedImage[] enemyLeft;
+    public static BufferedImage[] enemyRight;
 
     private  BufferedImage cropImage(int x, int y, int width, int height) {
         return sheet.getSubimage(x, y, width, height);
@@ -69,6 +73,23 @@ public class Assets {
         pillar = cropImage(0 * SPRITE_WIDTH, 6 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT * 2);
 
         box = cropImage(1 * SPRITE_WIDTH, 7 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+
+        enemyDown = new BufferedImage[3];
+        enemyDown[0] = cropImage(0 * SPRITE_WIDTH, 8 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        enemyDown[1] = cropImage(0 * SPRITE_WIDTH, 9 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        enemyDown[2] = cropImage(0 * SPRITE_WIDTH, 10 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        enemyUp = new BufferedImage[3];
+        enemyUp[0] = cropImage(1 * SPRITE_WIDTH, 8 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        enemyUp[1] = cropImage(1 * SPRITE_WIDTH, 9 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        enemyUp[2] = cropImage(1 * SPRITE_WIDTH, 10 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        enemyLeft = new BufferedImage[3];
+        enemyLeft[0] = cropImage(2 * SPRITE_WIDTH, 8 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        enemyLeft[1] = cropImage(2 * SPRITE_WIDTH, 9 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        enemyLeft[2] = cropImage(2 * SPRITE_WIDTH, 10 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        enemyRight = new BufferedImage[3];
+        enemyRight[0] = cropImage(3 * SPRITE_WIDTH, 8 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        enemyRight[1] = cropImage(3 * SPRITE_WIDTH, 9 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
+        enemyRight[2] = cropImage(3 * SPRITE_WIDTH, 10 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
 
     }
 

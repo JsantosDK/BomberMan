@@ -18,6 +18,11 @@ public class BoxController extends AbstractObjectController {
         return boxService.getY() + boxService.getEntityHeight();
     }
 
+    @Override
+    public float getY() {
+        return boxService.getY();
+    }
+
     public void setBoxService(BoxService boxService) {
         this.boxService = boxService;
         this.boxService.getCollisionBox().setBounds(2,7,23,18);

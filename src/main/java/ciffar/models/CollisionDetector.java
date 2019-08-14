@@ -12,7 +12,7 @@ public class CollisionDetector {
 
     public boolean crash(AbstractCreatureService creatureService){
         for (EntityService entity: entityList) {
-            if (entity.getCollisionBox().equals(creatureService.getCollisionBox())){
+            if (entity.getCollisionBox().equals(creatureService.getCollisionBox()) && entity.hashCode() == creatureService.hashCode()){
                 continue;
             }
             if (gridCollisionBox(creatureService, creatureService.getHorizontalMove(),creatureService.getVerticalMove()).intersects(gridCollisionBox(entity))){

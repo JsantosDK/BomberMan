@@ -45,7 +45,7 @@ public abstract class AbstractCreaturesView extends AbstractEntityView {
         return animationRight.getCurrentFrame();
     }
 
-    public void setCreatureService(PlayerService creatureService) {
+    public void setCreatureService(AbstractCreatureService creatureService) {
         this.creatureService = creatureService;
     }
 

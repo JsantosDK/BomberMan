@@ -1,5 +1,6 @@
 package ciffar.services;
 
+import ciffar.controllers.entities.creatures.EnemyController;
 import ciffar.controllers.entities.objects.BoxController;
 import ciffar.models.EntityManager;
 import ciffar.controllers.entities.objects.PillarController;
@@ -7,8 +8,10 @@ import ciffar.graphics.Assets;
 import ciffar.models.tiles.FloorTile;
 import ciffar.models.tiles.ObstacleTile;
 import ciffar.models.tiles.Tile;
+import ciffar.services.entities.creatures.EnemyService;
 import ciffar.services.entities.objects.BoxService;
 import ciffar.services.entities.objects.PillarService;
+import ciffar.views.entities.creatures.EnemyView;
 import ciffar.views.entities.objects.BoxView;
 import ciffar.views.entities.objects.PillarView;
 
@@ -66,13 +69,18 @@ public class WorldService {
                 }
                 worldGrid[i][j] = new FloorTile(Assets.interior[(int) (Math.random() * 4)]);
 
-                if ( (((i < 2 && j > 2) || (i > 2 && j < 2)) || ((i >= 2 && j >= 2) && !(i%2 == 0 && j%2==0))) && Math.random()>0.7  ){
-                    createBoxObject(j * Assets.SPRITE_WIDTH, i * Assets.SPRITE_HEIGHT);
+                if ( ((i < 2 && j > 2) || (i > 2 && j < 2)) || ((i >= 2 && j >= 2) && !(i%2 == 0 && j%2==0))){
+                    if (Math.random() < 0.3) {
+                        createBoxObject(j * Assets.SPRITE_WIDTH, i * Assets.SPRITE_HEIGHT);
+                    } else if (Math.random() < 0.1){
+                        createEnemyObject(j * Assets.SPRITE_WIDTH, i * Assets.SPRITE_HEIGHT);
+                    }
                 } else if ( i%2 == 0 && j%2 == 0 && (i < worldHeight - 2 && j < worldWidth - 2 ) ) {
                     createPillarObject(j * Assets.SPRITE_WIDTH, (i - 1) * Assets.SPRITE_HEIGHT );
                 }
             }
         }
+        //createEnemyObject(Assets.SPRITE_WIDTH,2 * Assets.SPRITE_HEIGHT);
     }
 
     private void createBoxObject(int x, int y){
@@ -80,10 +88,10 @@ public class WorldService {
         BoxService boxService = new BoxService(x,y);
         BoxView boxView = new BoxView();
 
-        boxView.setGraphics(entityManager.getGraphics());
-        boxView.setBoxService(boxService);
         boxController.setBoxService(boxService);
         boxController.setBoxView(boxView);
+        boxView.setGraphics(entityManager.getGraphics());
+        boxView.setBoxService(boxService);
 
         entityManager.addEntity(boxController,boxService);
     }
@@ -93,12 +101,27 @@ public class WorldService {
         PillarService pillarService = new PillarService(x,y);
         PillarView pillarView = new PillarView();
 
-        pillarView.setGraphics(entityManager.getGraphics());
-        pillarView.setPillarService(pillarService);
         pillarController.setPillarService(pillarService);
         pillarController.setPillarView(pillarView);
+        pillarView.setGraphics(entityManager.getGraphics());
+        pillarView.setPillarService(pillarService);
 
         entityManager.addEntity(pillarController, pillarService);
+    }
+
+    private void createEnemyObject(int x, int y){
+        EnemyController enemyController = new EnemyController();
+        EnemyService enemyService = new EnemyService(x,y);
+        EnemyView enemyView = new EnemyView();
+
+        enemyController.setEnemyService(enemyService);
+        enemyController.setView(enemyView);
+        enemyService.setWorldService(this);
+        enemyView.setGraphics(entityManager.getGraphics());
+        enemyView.setEnemyController(enemyController);
+        enemyView.setCreatureService(enemyService);
+
+        entityManager.addEntity(enemyController, enemyService);
     }
 
     public Tile[][] getWorldGrid() {

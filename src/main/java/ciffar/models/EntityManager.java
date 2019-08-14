@@ -53,6 +53,9 @@ public class EntityManager {
                 if (entity1.getBase() <= entity2.getBase()) {
                     return -1;
                 }
+                if (entity1.getY() <= entity2.getY()){
+                    return 1;
+                }
                 return 1;
             }
         };
