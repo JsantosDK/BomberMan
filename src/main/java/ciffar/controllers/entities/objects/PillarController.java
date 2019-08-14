@@ -20,7 +20,7 @@ public class PillarController extends AbstractObjectController {
 
     public void setPillarService(PillarService pillarService) {
         this.pillarService = pillarService;
-        this.pillarService.getCollisionBox().setBounds(1,30,25,22);
+        this.pillarService.getCollisionBox().setBounds(1,31,23,18);
     }
 
     public void setPillarView(PillarView pillarView) {

@@ -1,4 +1,4 @@
-package ciffar.services;
+package ciffar.models;
 
 import java.awt.image.BufferedImage;
 

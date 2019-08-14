@@ -1,6 +1,6 @@
 package ciffar.views.entities.creatures;
 
-import ciffar.services.Animation;
+import ciffar.models.Animation;
 import ciffar.services.entities.creatures.AbstractCreatureService;
 import ciffar.services.entities.creatures.PlayerService;
 import ciffar.views.entities.AbstractEntityView;

@@ -33,6 +33,7 @@ public class Bootstrap {
 
     public Bootstrap() {
         assets = new Assets();
+        assets.init();
         windowService = new WindowService();
         graphics = windowService.getGraphics();
         windowController = new WindowController();
@@ -46,7 +47,7 @@ public class Bootstrap {
         worldView = new WorldView();
         entityManager = new EntityManager();
 
-        assets.init();
+
         windowController.setWindowView(windowView);
         windowController.setWindowService(windowService);
         windowController.addKeyLoader(keyLoader);

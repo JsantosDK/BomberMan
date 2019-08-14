@@ -2,7 +2,7 @@ package ciffar.views.entities.creatures;
 
 import ciffar.controllers.entities.creatures.PlayerController;
 import ciffar.graphics.Assets;
-import ciffar.services.Animation;
+import ciffar.models.Animation;
 import org.academiadecodigo.bootcamp.entity.creatures.Directions;
 
 import java.awt.image.BufferedImage;

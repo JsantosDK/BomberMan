@@ -65,7 +65,7 @@ public class Assets {
         interior[2] = cropImage(2 * SPRITE_WIDTH, 5 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
         interior[3] = cropImage(3 * SPRITE_WIDTH, 5 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
 
-        pillar = cropImage(1 * SPRITE_WIDTH, 6 * SPRITE_HEIGHT + 7, SPRITE_WIDTH, SPRITE_HEIGHT * 2);
+        pillar = cropImage(0 * SPRITE_WIDTH, 6 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT * 2);
 
 
 
