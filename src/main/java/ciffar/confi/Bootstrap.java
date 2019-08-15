@@ -57,7 +57,7 @@ public class Bootstrap {
         playerController.setView(playerView);
         playerController.setKeyLoader(keyLoader);
         playerView.setCreatureService(playerService);
-        playerView.setPlayerController(playerController);
+        playerView.setCreatureController(playerController);
         playerView.setGraphics(graphics);
         windowView.setWorldView(worldView);
         worldService.setEntityManager(entityManager);

@@ -1,4 +1,4 @@
-package org.academiadecodigo.bootcamp.entity.creatures;
+package ciffar.models;
 
 public enum Directions {
     UP,

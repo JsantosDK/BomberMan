@@ -2,7 +2,7 @@ package ciffar.controllers.entities.creatures;
 
 import ciffar.loaders.KeyLoader;
 import ciffar.services.entities.creatures.PlayerService;
-import org.academiadecodigo.bootcamp.entity.creatures.Directions;
+import ciffar.models.Directions;
 
 public class PlayerController extends AbstractCreatureController {
 
@@ -27,23 +27,21 @@ public class PlayerController extends AbstractCreatureController {
     protected void moveCreature() {
         if (keyLoader.isUp()){
             pointTowardsDirection = Directions.UP;
-            playerService.getDirection(Directions.UP);
+            playerService.moveTowardsDirection(Directions.UP);
         }
         if (keyLoader.isDown()){
             pointTowardsDirection = Directions.DOWN;
-            playerService.getDirection(Directions.DOWN);
+            playerService.moveTowardsDirection(Directions.DOWN);
         }
         if (keyLoader.isLeft()){
             pointTowardsDirection = Directions.LEFT;
-            playerService.getDirection(Directions.LEFT);
+            playerService.moveTowardsDirection(Directions.LEFT);
         }
         if (keyLoader.isRight()){
             pointTowardsDirection = Directions.RIGHT;
-            playerService.getDirection(Directions.RIGHT);
+            playerService.moveTowardsDirection(Directions.RIGHT);
         }
     }
-
-
 
     public void setKeyLoader(KeyLoader keyLoader) {
         this.keyLoader = keyLoader;
@@ -62,4 +60,5 @@ public class PlayerController extends AbstractCreatureController {
     public float getY() {
         return playerService.getY();
     }
+
 }

@@ -4,7 +4,7 @@ import ciffar.models.CollisionDetector;
 import ciffar.graphics.Assets;
 import ciffar.services.WorldService;
 import ciffar.services.entities.AbstractEntityService;
-import org.academiadecodigo.bootcamp.entity.creatures.Directions;
+import ciffar.models.Directions;
 
 public abstract class AbstractCreatureService extends AbstractEntityService {
 
@@ -89,7 +89,7 @@ public abstract class AbstractCreatureService extends AbstractEntityService {
         this.collisionDetector = collisionDetector;
     }
 
-    public void getDirection(Directions directions){
+    public void moveTowardsDirection(Directions directions){
         horizontalMove = 0;
         verticalMove = 0;
         switch (directions){

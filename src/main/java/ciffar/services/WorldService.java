@@ -118,7 +118,7 @@ public class WorldService {
         enemyController.setView(enemyView);
         enemyService.setWorldService(this);
         enemyView.setGraphics(entityManager.getGraphics());
-        enemyView.setEnemyController(enemyController);
+        enemyView.setCreatureController(enemyController);
         enemyView.setCreatureService(enemyService);
 
         entityManager.addEntity(enemyController, enemyService);

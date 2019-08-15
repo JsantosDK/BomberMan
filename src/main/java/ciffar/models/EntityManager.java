@@ -50,10 +50,13 @@ public class EntityManager {
         renderSort = new Comparator<EntityController>() {
             @Override
             public int compare(EntityController entity1, EntityController entity2) {
-                if (entity1.getBase() <= entity2.getBase()) {
+                if (entity1.getBase() < entity2.getBase()) {
                     return -1;
                 }
-                if (entity1.getY() <= entity2.getY()){
+                if (entity1.getY() < entity1.getY()){
+                    return -1;
+                }
+                if (entity1.hashCode() < entity2.hashCode()){
                     return 1;
                 }
                 return 1;

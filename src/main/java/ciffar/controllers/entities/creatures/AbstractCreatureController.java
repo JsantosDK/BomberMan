@@ -1,7 +1,7 @@
 package ciffar.controllers.entities.creatures;
 
 import ciffar.controllers.entities.AbstractEntityController;
-import org.academiadecodigo.bootcamp.entity.creatures.Directions;
+import ciffar.models.Directions;
 
 public abstract class AbstractCreatureController extends AbstractEntityController {
 

@@ -1,7 +1,5 @@
 package ciffar.services.entities.creatures;
 
-import org.academiadecodigo.bootcamp.entity.creatures.Directions;
-
 public class PlayerService extends AbstractCreatureService {
 
     public PlayerService(float x, float y) {

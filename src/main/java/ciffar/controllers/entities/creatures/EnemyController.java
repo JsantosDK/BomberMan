@@ -1,11 +1,12 @@
 package ciffar.controllers.entities.creatures;
 
 import ciffar.services.entities.creatures.EnemyService;
-import org.academiadecodigo.bootcamp.entity.creatures.Directions;
+import ciffar.models.Directions;
 
 public class EnemyController extends AbstractCreatureController  {
 
     private EnemyService enemyService;
+    private double stepCounter;
 
     public EnemyController() {
         pointTowardsDirection = Directions.DOWN;
@@ -13,7 +14,13 @@ public class EnemyController extends AbstractCreatureController  {
     }
 
     public void init(){
-        moveCreature();
+        if (stepCounter != 0) {
+            stepCounter--;
+            enemyService.moveTowardsDirection(pointTowardsDirection);
+        } else {
+            stepCounter = 25 * (int) (Math.random() * 3 )+ 1;
+            moveCreature();
+        }
         view.init();
     }
 
@@ -22,16 +29,16 @@ public class EnemyController extends AbstractCreatureController  {
         double directionToMove = Math.random();
         if (directionToMove < 0.25){
             pointTowardsDirection = Directions.UP;
-            enemyService.getDirection(Directions.UP);
+            enemyService.moveTowardsDirection(Directions.UP);
         } else if (directionToMove < 0.5){
             pointTowardsDirection = Directions.DOWN;
-            enemyService.getDirection(Directions.DOWN);
+            enemyService.moveTowardsDirection(Directions.DOWN);
         } else if (directionToMove < 0.75){
             pointTowardsDirection = Directions.LEFT;
-            enemyService.getDirection(Directions.LEFT);
+            enemyService.moveTowardsDirection(Directions.LEFT);
         } else {
             pointTowardsDirection = Directions.RIGHT;
-            enemyService.getDirection(Directions.RIGHT);
+            enemyService.moveTowardsDirection(Directions.RIGHT);
         }
     }
 
