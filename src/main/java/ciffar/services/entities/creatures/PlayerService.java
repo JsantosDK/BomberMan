@@ -7,8 +7,4 @@ public class PlayerService extends AbstractCreatureService {
        collisionBox.setBounds(6,10,15,15);
     }
 
-
-
 }
-
-

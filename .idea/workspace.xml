@@ -2,18 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ea87aeb-14a6-4228-adb0-9d5be76e2c28" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ciffar/services/entities/objects/BombService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/confi/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/confi/Bootstrap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/creatures/PlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/creatures/PlayerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/graphics/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/graphics/Assets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/objects/BombController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/objects/BombController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/models/CollisionDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/models/CollisionDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/services/entities/creatures/EnemyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/services/entities/creatures/EnemyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/models/EntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/models/EntityManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/services/entities/creatures/PlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/services/entities/creatures/PlayerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/services/entities/objects/AbstractObjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/services/entities/objects/AbstractObjectService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SpriteSheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SpriteSheet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SpriteSheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SpriteSheet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/services/entities/objects/BombService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/services/entities/objects/BombService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/confi/Bootstrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/confi/Bootstrap.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ciffar/controllers/entities/creatures/PlayerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/controllers/entities/creatures/PlayerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/models/CollisionDetector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/models/CollisionDetector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/controllers/entities/objects/BombController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/controllers/entities/objects/BombController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/models/EntityManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/models/EntityManager$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/models/EntityManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/models/EntityManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/services/entities/objects/BombService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/services/entities/objects/BombService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,60 +29,36 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/models/CollisionDetector.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/creatures/PlayerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+            <state relative-caret-position="177">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/creatures/PlayerController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/objects/BombController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="203">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#296#297#0" expanded="true" />
+                <element signature="e#327#328#0" expanded="true" />
+                <element signature="e#802#803#0" expanded="true" />
+                <element signature="e#830#831#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/graphics/Assets.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/models/CollisionDetector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="95" column="95" selection-start-line="95" selection-start-column="95" selection-end-line="95" selection-end-column="95" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/services/entities/creatures/PlayerService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/services/entities/creatures/EnemyService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/entities/objects/BombView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            <state relative-caret-position="266">
+              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -88,20 +66,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/services/entities/objects/BombService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="75">
+              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+              <folding>
+                <element signature="e#142#143#0" expanded="true" />
+                <element signature="e#169#170#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/services/entities/objects/AbstractObjectService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/confi/Bootstrap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="265">
+              <caret line="78" selection-start-line="78" selection-end-line="78" />
             </state>
           </provider>
         </entry>
@@ -135,7 +114,6 @@
         <option value="$PROJECT_DIR$/src/main/java/ciffar/views/entities/objects/TileView.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/graphics/SpriteSheet.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/models/Animation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/confi/Bootstrap.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/views/entities/objects/PillarView.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/services/entities/objects/BoxService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/services/entities/objects/PillarService.java" />
@@ -145,20 +123,23 @@
         <option value="$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/EntityController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/objects/BoxController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/objects/PillarController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/models/EntityManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/services/WorldService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/views/entities/creatures/AbstractCreaturesView.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/views/entities/creatures/PlayerView.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/views/entities/creatures/EnemyView.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/loaders/ImageLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/creatures/EnemyController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/models/CollisionDetector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/creatures/PlayerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/graphics/Assets.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ciffar/services/entities/creatures/PlayerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/services/entities/creatures/EnemyService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/services/entities/objects/AbstractObjectService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ciffar/views/entities/objects/BombView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ciffar/services/entities/creatures/PlayerService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ciffar/models/EntityManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/ciffar/services/entities/objects/BombService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ciffar/confi/Bootstrap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ciffar/models/CollisionDetector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/objects/BombController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/creatures/PlayerController.java" />
       </list>
     </option>
   </component>
@@ -173,8 +154,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -215,7 +194,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ciffar" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bomberman2d" type="b2602c69:ProjectViewProjectNode" />
@@ -224,7 +203,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ciffar" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
               <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -234,9 +213,9 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ciffar" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
               <item name="entities" type="462c0819:PsiDirectoryNode" />
-              <item name="objects" type="462c0819:PsiDirectoryNode" />
+              <item name="creatures" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bomberman2d" type="b2602c69:ProjectViewProjectNode" />
@@ -245,26 +224,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ciffar" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bomberman2d" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bomberman2d" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ciffar" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bomberman2d" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bomberman2d" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ciffar" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
               <item name="entities" type="462c0819:PsiDirectoryNode" />
               <item name="objects" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -272,6 +232,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -342,18 +304,19 @@
       <workItem from="1565788147682" duration="10671000" />
       <workItem from="1565855724453" duration="3764000" />
       <workItem from="1565859798914" duration="37000" />
-      <workItem from="1565864510726" duration="1186000" />
+      <workItem from="1565864510726" duration="3091000" />
+      <workItem from="1565882355843" duration="1049000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26238000" />
+    <option name="totallyTimeSpent" value="29192000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="975" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18849841" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19009584" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -362,7 +325,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295583" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3295583" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3295583" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997735" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -387,14 +350,19 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ciffar/views/entities/objects/BombView.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/services/entities/EntityService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/WindowView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -403,24 +371,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/gfx/Assets.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/confi/Engine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/entities/objects/AbstractObjectsView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/entities/AbstractEntityView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -508,16 +462,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/entities/objects/BoxView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/SpriteSheet.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -582,33 +526,6 @@
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>public</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/objects/AbstractObjectController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/AbstractEntityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/objects/PillarController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-          <folding>
-            <element signature="e#526#527#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -704,13 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/confi/Bootstrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="58" column="26" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/academiadecodigo/bootcamp/utils/Utils.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/loaders/ImageLoader.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -722,64 +632,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/creatures/EnemyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1477#1478#0" expanded="true" />
-            <element signature="e#1525#1526#0" expanded="true" />
-            <element signature="e#1569#1570#0" expanded="true" />
-            <element signature="e#1644#1645#0" expanded="true" />
-            <element signature="e#1685#1686#0" expanded="true" />
-            <element signature="e#1727#1728#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/models/EntityManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/models/Directions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/models/CollisionDetector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/creatures/PlayerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/graphics/Assets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="95" column="95" selection-start-line="95" selection-start-column="95" selection-end-line="95" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/services/entities/creatures/PlayerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -818,10 +674,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/services/entities/objects/BombService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/entities/objects/BoxView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/objects/PillarController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#852#853#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/services/entities/creatures/PlayerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/graphics/Assets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="95" column="95" selection-start-line="95" selection-start-column="95" selection-end-line="95" selection-end-column="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -832,10 +721,105 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/AbstractEntityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/entities/AbstractEntityView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/models/EntityManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="33" column="53" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/views/entities/objects/BombView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/confi/Engine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/objects/AbstractObjectController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/confi/Bootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/services/entities/objects/BombService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding>
+            <element signature="e#142#143#0" expanded="true" />
+            <element signature="e#169#170#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/models/CollisionDetector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/creatures/EnemyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/objects/BombController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#830#831#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/creatures/PlayerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>

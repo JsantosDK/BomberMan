@@ -56,6 +56,8 @@ public class Bootstrap {
         playerController.setPlayerService(playerService);
         playerController.setView(playerView);
         playerController.setKeyLoader(keyLoader);
+        playerController.setEntityManager(entityManager);
+
         playerView.setCreatureService(playerService);
         playerView.setCreatureController(playerController);
         playerView.setGraphics(graphics);
@@ -69,6 +71,10 @@ public class Bootstrap {
         entityManager.setGraphics(graphics);
         playerService.setCollisionDetector(entityManager.getCollisionDetector());
         entityManager.addEntity(playerController,playerService);
+        playerController.setupBomb();
+
+
+
 
 
         Engine engine = new Engine();

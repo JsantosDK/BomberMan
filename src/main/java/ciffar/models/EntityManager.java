@@ -2,6 +2,7 @@ package ciffar.models;
 
 import ciffar.controllers.entities.EntityController;
 import ciffar.controllers.entities.creatures.PlayerController;
+import ciffar.controllers.entities.objects.BombController;
 import ciffar.models.CollisionDetector;
 import ciffar.services.entities.EntityService;
 import ciffar.services.entities.creatures.AbstractCreatureService;
@@ -30,7 +31,10 @@ public class EntityManager {
     public void init(){
         for (int i = 0; i < entityControllers.size(); i++) {
             EntityController entity = entityControllers.get(i);
-            entity.init();
+            if (!(entity  instanceof BombController)){
+                entity.init();
+            }
+
         }
         entityControllers.sort(renderSort);
     }

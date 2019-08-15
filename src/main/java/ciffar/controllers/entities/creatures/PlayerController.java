@@ -1,13 +1,20 @@
 package ciffar.controllers.entities.creatures;
 
+import ciffar.controllers.entities.objects.BombController;
 import ciffar.loaders.KeyLoader;
+import ciffar.models.EntityManager;
 import ciffar.services.entities.creatures.PlayerService;
 import ciffar.models.Directions;
+import ciffar.services.entities.objects.BombService;
+import ciffar.views.entities.objects.BombView;
 
 public class PlayerController extends AbstractCreatureController {
 
     private PlayerService playerService;
     private KeyLoader keyLoader;
+    private BombController bombController;
+    private EntityManager entityManager;
+    private boolean bombInUse;
 
     public PlayerController() {
         pointTowardsDirection = Directions.DOWN;
@@ -21,7 +28,8 @@ public class PlayerController extends AbstractCreatureController {
             moveCreature();
         } else {moving = false;}
         if (keyLoader.isBomb()){
-            System.out.println("Bomb placed");
+            bombController.setLocation( (int) playerService.getX(), (int )playerService.getY());
+            bombController.init();
         }
         view.init();
     }
@@ -64,4 +72,20 @@ public class PlayerController extends AbstractCreatureController {
         return playerService.getY();
     }
 
+    public void setupBomb(){
+        bombController = new BombController();
+        BombService bombService = new BombService(0,0);
+        BombView bombView = new BombView();
+
+        bombView.setBombService(bombService);
+        bombView.setGraphics(entityManager.getGraphics());
+        bombController.setBombService(bombService);
+        bombController.setView(bombView);
+
+        entityManager.addEntity(bombController, bombService);
+    }
+
+    public void setEntityManager(EntityManager entityManager) {
+        this.entityManager = entityManager;
+    }
 }

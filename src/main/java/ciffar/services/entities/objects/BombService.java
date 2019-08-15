@@ -4,7 +4,13 @@ public class BombService extends AbstractObjectService {
 
     public BombService(float x, float y) {
         super(x, y);
-        collisionBox.setBounds(0,0,25,25);
     }
 
+    public void setX(float x){
+        this.x = x;
+    }
+
+    public void setY(float y){
+        this.y = y;
+    }
 }

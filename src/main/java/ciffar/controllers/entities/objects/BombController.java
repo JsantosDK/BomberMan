@@ -1,16 +1,16 @@
 package ciffar.controllers.entities.objects;
 
 import ciffar.services.entities.objects.BombService;
-import ciffar.views.entities.objects.BombView;
 
 public class BombController extends AbstractObjectController {
 
     private BombService bombService;
-    private BombView bombView;
+    private boolean using;
+    private int timeOnScreen;
 
     @Override
     public void init() {
-        bombView.init();
+        view.init();
     }
 
     @Override
@@ -25,10 +25,16 @@ public class BombController extends AbstractObjectController {
 
     public void setBombService(BombService bombService) {
         this.bombService = bombService;
-        this.bombService.getCollisionBox().setBounds(1,31,23,18);
+        this.bombService.getCollisionBox().setBounds(4, 2, 18, 18);
     }
 
-    public void setBombView(BombView bombView) {
-        this.bombView = bombView;
+    public void setLocation(int x, int y) {
+        bombService.setX(x);
+        bombService.setY(y);
     }
+
+    public boolean isUsing() {
+        return using;
+    }
+
 }
