@@ -2,6 +2,8 @@ package ciffar.models;
 
 import ciffar.services.entities.EntityService;
 import ciffar.services.entities.creatures.AbstractCreatureService;
+import ciffar.services.entities.creatures.EnemyService;
+import ciffar.services.entities.creatures.PlayerService;
 
 import java.awt.*;
 import java.util.List;
@@ -16,6 +18,9 @@ public class CollisionDetector {
                 continue;
             }
             if (gridCollisionBox(creatureService, creatureService.getHorizontalMove(),creatureService.getVerticalMove()).intersects(gridCollisionBox(entity))){
+                if ((creatureService instanceof PlayerService) && (entity instanceof EnemyService) ){
+                    System.out.println("Damage");
+                }
                 return true;
             }
         }

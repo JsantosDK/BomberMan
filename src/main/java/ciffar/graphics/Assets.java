@@ -32,6 +32,7 @@ public class Assets {
     public static BufferedImage[] enemyUp;
     public static BufferedImage[] enemyLeft;
     public static BufferedImage[] enemyRight;
+    public static BufferedImage[] bomb;
 
     private  BufferedImage cropImage(int x, int y, int width, int height) {
         return sheet.getSubimage(x, y, width, height);
@@ -91,6 +92,8 @@ public class Assets {
         enemyRight[1] = cropImage(3 * SPRITE_WIDTH, 9 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
         enemyRight[2] = cropImage(3 * SPRITE_WIDTH, 10 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
 
+        bomb = new BufferedImage[1];
+        bomb[0] = cropImage(0 * SPRITE_WIDTH, 11 * SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
     }
 
 }

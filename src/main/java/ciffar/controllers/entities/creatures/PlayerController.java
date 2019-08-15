@@ -20,6 +20,9 @@ public class PlayerController extends AbstractCreatureController {
             moving = true;
             moveCreature();
         } else {moving = false;}
+        if (keyLoader.isBomb()){
+            System.out.println("Bomb placed");
+        }
         view.init();
     }
 
