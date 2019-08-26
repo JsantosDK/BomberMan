@@ -47,7 +47,11 @@ public class EntityManager {
             AbstractCreatureService creatureService = (AbstractCreatureService) entityService;
             creatureService.setCollisionDetector(collisionDetector);
         }
+    }
 
+    public void removeEntity(EntityController entityController, EntityService entityService){
+        entityControllers.remove(entityController);
+        entityServices.remove(entityService);
     }
 
     private void setupManager(){
@@ -57,8 +61,8 @@ public class EntityManager {
                 if (entity1.getBase() < entity2.getBase()) {
                     return -1;
                 }
-                if (entity1.getY() < entity1.getY()){
-                    return -1;
+                if (entity1.getY() < entity2.getY()){
+                   return 1;
                 }
                 if (entity1.hashCode() < entity2.hashCode()){
                     return 1;

@@ -5,8 +5,6 @@ import ciffar.services.entities.objects.BombService;
 public class BombController extends AbstractObjectController {
 
     private BombService bombService;
-    private boolean using;
-    private int timeOnScreen;
 
     @Override
     public void init() {
@@ -28,13 +26,9 @@ public class BombController extends AbstractObjectController {
         this.bombService.getCollisionBox().setBounds(4, 2, 18, 18);
     }
 
-    public void setLocation(int x, int y) {
+    public void setLocation(float x, float y) {
         bombService.setX(x);
         bombService.setY(y);
-    }
-
-    public boolean isUsing() {
-        return using;
     }
 
 }
