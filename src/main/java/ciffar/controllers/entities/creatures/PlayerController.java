@@ -19,7 +19,6 @@ public class PlayerController extends AbstractCreatureController {
     private EntityManager entityManager;
     private boolean usingBomb;
     private int bombTimer;
-    private Timer timer;
 
     public PlayerController() {
         pointTowardsDirection = Directions.DOWN;

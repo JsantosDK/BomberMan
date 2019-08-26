@@ -2,6 +2,8 @@ package ciffar.services;
 
 import ciffar.controllers.entities.creatures.EnemyController;
 import ciffar.controllers.entities.objects.BoxController;
+import ciffar.factories.EntityFactory;
+import ciffar.factories.ObjectTypes;
 import ciffar.models.EntityManager;
 import ciffar.controllers.entities.objects.PillarController;
 import ciffar.graphics.Assets;
@@ -21,6 +23,7 @@ public class WorldService {
     private int worldHeight;
     private Tile[][] worldGrid;
     private EntityManager entityManager;
+    private EntityFactory entityFactory;
 
     public WorldService() {
         worldWidth = Assets.GAME_WIDTH / Assets.SPRITE_WIDTH;
@@ -30,6 +33,7 @@ public class WorldService {
 
     public void init(){
         generateGrid();
+        entityFactory.createObject(ObjectTypes.PLAYER, Assets.SPRITE_WIDTH, Assets.SPRITE_HEIGHT);
     }
 
     private void generateGrid(){
@@ -71,57 +75,15 @@ public class WorldService {
 
                 if ( ((i < 2 && j > 2) || (i > 2 && j < 2)) || ((i >= 2 && j >= 2) && !(i%2 == 0 && j%2==0))){
                     if (Math.random() < 0.3) {
-                        createBoxObject(j * Assets.SPRITE_WIDTH, i * Assets.SPRITE_HEIGHT);
+                        entityFactory.createObject(ObjectTypes.BOX, j * Assets.SPRITE_WIDTH, i * Assets.SPRITE_HEIGHT);
                     } else if (Math.random() < 0.1){
-                        createEnemyObject(j * Assets.SPRITE_WIDTH, i * Assets.SPRITE_HEIGHT);
+                        entityFactory.createObject(ObjectTypes.ENEMY,j * Assets.SPRITE_WIDTH, i * Assets.SPRITE_HEIGHT);
                     }
                 } else if ( i%2 == 0 && j%2 == 0 && (i < worldHeight - 2 && j < worldWidth - 2 ) ) {
-                    createPillarObject(j * Assets.SPRITE_WIDTH, (i - 1) * Assets.SPRITE_HEIGHT );
+                    entityFactory.createObject(ObjectTypes.PILLAR, j * Assets.SPRITE_WIDTH, (i - 1) * Assets.SPRITE_HEIGHT );
                 }
             }
         }
-        //createEnemyObject(Assets.SPRITE_WIDTH,2 * Assets.SPRITE_HEIGHT);
-    }
-
-    private void createBoxObject(int x, int y){
-        BoxController boxController = new BoxController();
-        BoxService boxService = new BoxService(x,y);
-        BoxView boxView = new BoxView();
-
-        boxController.setBoxService(boxService);
-        boxController.setBoxView(boxView);
-        boxView.setGraphics(entityManager.getGraphics());
-        boxView.setBoxService(boxService);
-
-        entityManager.addEntity(boxController,boxService);
-    }
-
-    private void createPillarObject(int x, int y){
-        PillarController pillarController = new PillarController();
-        PillarService pillarService = new PillarService(x,y);
-        PillarView pillarView = new PillarView();
-
-        pillarController.setPillarService(pillarService);
-        pillarController.setPillarView(pillarView);
-        pillarView.setGraphics(entityManager.getGraphics());
-        pillarView.setPillarService(pillarService);
-
-        entityManager.addEntity(pillarController, pillarService);
-    }
-
-    private void createEnemyObject(int x, int y){
-        EnemyController enemyController = new EnemyController();
-        EnemyService enemyService = new EnemyService(x,y);
-        EnemyView enemyView = new EnemyView();
-
-        enemyController.setEnemyService(enemyService);
-        enemyController.setView(enemyView);
-        enemyService.setWorldService(this);
-        enemyView.setGraphics(entityManager.getGraphics());
-        enemyView.setCreatureController(enemyController);
-        enemyView.setCreatureService(enemyService);
-
-        entityManager.addEntity(enemyController, enemyService);
     }
 
     public Tile[][] getWorldGrid() {
@@ -138,5 +100,9 @@ public class WorldService {
 
     public void setEntityManager(EntityManager entityManager) {
         this.entityManager = entityManager;
+    }
+
+    public void setEntityFactory(EntityFactory entityFactory) {
+        this.entityFactory = entityFactory;
     }
 }

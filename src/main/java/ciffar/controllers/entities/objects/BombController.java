@@ -23,7 +23,7 @@ public class BombController extends AbstractObjectController {
 
     public void setBombService(BombService bombService) {
         this.bombService = bombService;
-        this.bombService.getCollisionBox().setBounds(4, 2, 18, 18);
+        this.bombService.getCollisionBox().setBounds(5, 4, 16, 17);
     }
 
     public void setLocation(float x, float y) {
