@@ -31,14 +31,14 @@ public class WorldService {
         worldGrid = new Tile[worldHeight][worldWidth];
     }
 
-    public void init(){
+    public void init() {
         generateGrid();
         entityFactory.createObject(ObjectTypes.PLAYER, Assets.SPRITE_WIDTH, Assets.SPRITE_HEIGHT);
     }
 
-    private void generateGrid(){
-        for (int i = 0; i < worldHeight; i++){
-            for (int j = 0; j < worldWidth; j++){
+    private void generateGrid() {
+        for (int i = 0; i < worldHeight; i++) {
+            for (int j = 0; j < worldWidth; j++) {
                 if (i == 0 && j == 0) {
                     worldGrid[i][j] = new ObstacleTile(Assets.wallTopLeft);
                     continue;
@@ -73,14 +73,15 @@ public class WorldService {
                 }
                 worldGrid[i][j] = new FloorTile(Assets.interior[(int) (Math.random() * 4)]);
 
-                if ( ((i < 2 && j > 2) || (i > 2 && j < 2)) || ((i >= 2 && j >= 2) && !(i%2 == 0 && j%2==0))){
+
+                if (((i < 2 && j > 2) || (i > 2 && j < 2)) || ((i >= 2 && j >= 2) && !(i % 2 == 0 && j % 2 == 0))) {
                     if (Math.random() < 0.3) {
                         entityFactory.createObject(ObjectTypes.BOX, j * Assets.SPRITE_WIDTH, i * Assets.SPRITE_HEIGHT);
-                    } else if (Math.random() < 0.1){
-                        entityFactory.createObject(ObjectTypes.ENEMY,j * Assets.SPRITE_WIDTH, i * Assets.SPRITE_HEIGHT);
+                    } else if (Math.random() < 0.1) {
+                        entityFactory.createObject(ObjectTypes.ENEMY, j * Assets.SPRITE_WIDTH, i * Assets.SPRITE_HEIGHT);
                     }
-                } else if ( i%2 == 0 && j%2 == 0 && (i < worldHeight - 2 && j < worldWidth - 2 ) ) {
-                    entityFactory.createObject(ObjectTypes.PILLAR, j * Assets.SPRITE_WIDTH, (i - 1) * Assets.SPRITE_HEIGHT );
+                } else if (i % 2 == 0 && j % 2 == 0 && (i < worldHeight - 2 && j < worldWidth - 2)) {
+                    entityFactory.createObject(ObjectTypes.PILLAR, j * Assets.SPRITE_WIDTH, (i - 1) * Assets.SPRITE_HEIGHT);
                 }
             }
         }

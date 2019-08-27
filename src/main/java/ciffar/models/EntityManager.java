@@ -28,43 +28,40 @@ public class EntityManager {
         setupManager();
     }
 
-    public void init(){
+    public void init() {
         for (int i = 0; i < entityControllers.size(); i++) {
             EntityController entity = entityControllers.get(i);
-            if (!(entity  instanceof BombController)){
-                entity.init();
-            }
-
+            entity.init();
         }
         entityControllers.sort(renderSort);
     }
 
-    public void addEntity(EntityController entityController, EntityService entityService){
+    public void addEntity(EntityController entityController, EntityService entityService) {
         entityControllers.add(entityController);
         entityServices.add(entityService);
 
-        if (entityService instanceof AbstractCreatureService){
+        if (entityService instanceof AbstractCreatureService) {
             AbstractCreatureService creatureService = (AbstractCreatureService) entityService;
             creatureService.setCollisionDetector(collisionDetector);
         }
     }
 
-    public void removeEntity(EntityController entityController, EntityService entityService){
+    public void removeEntity(EntityController entityController, EntityService entityService) {
         entityControllers.remove(entityController);
         entityServices.remove(entityService);
     }
 
-    private void setupManager(){
+    private void setupManager() {
         renderSort = new Comparator<EntityController>() {
             @Override
             public int compare(EntityController entity1, EntityController entity2) {
                 if (entity1.getBase() < entity2.getBase()) {
                     return -1;
                 }
-                if (entity1.getY() < entity2.getY()){
-                   return 1;
+                if (entity1.getY() < entity2.getY()) {
+                    return 1;
                 }
-                if (entity1.hashCode() < entity2.hashCode()){
+                if (entity1.hashCode() < entity2.hashCode()) {
                     return 1;
                 }
                 return 1;

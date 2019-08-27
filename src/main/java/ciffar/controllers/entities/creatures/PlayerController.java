@@ -101,8 +101,7 @@ public class PlayerController extends AbstractCreatureController {
     }
 
     private void countdownBomb() {
-        bombController.init();
-        bombTimer--;
+         bombTimer--;
         if (bombTimer == 0) {
             bombTimer = 500;
             usingBomb = false;
