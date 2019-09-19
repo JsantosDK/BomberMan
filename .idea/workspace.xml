@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ea87aeb-14a6-4228-adb0-9d5be76e2c28" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/creatures/EnemyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ciffar/controllers/entities/creatures/EnemyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ciffar/controllers/entities/creatures/EnemyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ciffar/controllers/entities/creatures/EnemyController.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +26,7 @@
   </component>
   <component name="ProjectId" id="1Q0DbM6XLqSg7jzD72o8EPWVqSf" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />

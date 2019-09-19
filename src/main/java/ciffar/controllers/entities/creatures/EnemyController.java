@@ -8,6 +8,8 @@ public class EnemyController extends AbstractCreatureController  {
     private EnemyService enemyService;
     private double stepCounter;
     private boolean correctionOngoing;
+    private float previousX;
+    private float previousY;
 
     public EnemyController() {
         pointTowardsDirection = Directions.DOWN;
@@ -31,20 +33,8 @@ public class EnemyController extends AbstractCreatureController  {
     @Override
     protected void moveCreature() {
         if (!correctionOngoing) {
-            double directionToMove = Math.random();
-            if (directionToMove < 0.25) {
-                pointTowardsDirection = Directions.UP;
-                enemyService.moveTowardsDirection(Directions.UP);
-            } else if (directionToMove < 0.5) {
-                pointTowardsDirection = Directions.DOWN;
-                enemyService.moveTowardsDirection(Directions.DOWN);
-            } else if (directionToMove < 0.75) {
-                pointTowardsDirection = Directions.LEFT;
-                enemyService.moveTowardsDirection(Directions.LEFT);
-            } else {
-                pointTowardsDirection = Directions.RIGHT;
-                enemyService.moveTowardsDirection(Directions.RIGHT);
-            }
+            pointTowardsDirection = Directions.values()[(int) (Math.random() * Directions.values().length)];
+            enemyService.moveTowardsDirection(pointTowardsDirection);
         }
     }
 
@@ -80,5 +70,23 @@ public class EnemyController extends AbstractCreatureController  {
         if (enemyService.getY() % 25 == 0 && enemyService.getX() % 25 == 0){
             correctionOngoing = false;
         }
+        updatePastLocation();
     }
+
+    private void updatePastLocation(){
+        previousX = enemyService.getX();
+        previousY = enemyService.getY();
+    }
+
+
+
+    private void pickMovement(){
+        if (enemyService.getX() == previousX && enemyService.getY() == previousY){
+
+        } else {
+            stepCounter--;
+            enemyService.moveTowardsDirection(pointTowardsDirection);
+        }
+    }
+
 }
